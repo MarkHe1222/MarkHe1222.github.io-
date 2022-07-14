@@ -82,7 +82,7 @@ CLH是虚拟的双向队列，底层是双向链表，包括head节点和tail结
 - 如果当前线程获取同步状态失败（锁）时，AQS 则会将当前线程以及等待状态等信息构造成一个节点（Node）并将其加入同步队列，同时会阻塞当前线程
 - 当同步状态释放时，则会把节点中的线程唤醒，使其再次尝试获取同步状态。
 
-#### Node 数据结构分析
+### Node 数据结构分析
 
 ```java
   // 结点的数据结构  
@@ -176,7 +176,7 @@ CLH是虚拟的双向队列，底层是双向链表，包括head节点和tail结
     private transient volatile Node tail;
 ```
 
-#### Node 的状态表「waitStatus」
+### Node 的状态表「waitStatus」
 
 | 状态名    | 状态值 | 描述                                                         |
 | :-------- | :----: | :----------------------------------------------------------- |
@@ -759,8 +759,6 @@ tryRelease的默认实现是抛出异常，需要具体的子类实现，如果t
     }
 ```
 
-
-
 ## 7 扩展
 
 ### Condition接口
@@ -1296,8 +1294,6 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
         }
 ```
 
-
-
 ## 引用
 
 - [Java并发包源码学习系列：AbstractQueuedSynchronizer](https://www.cnblogs.com/summerday152/p/14238284.html)
@@ -1306,4 +1302,4 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
 
 - [一行一行源码分析清楚AbstractQueuedSynchronizer](https://javadoop.com/post/AbstractQueuedSynchronizer)
 
-- [Java并发包源码学习系列：详解Condition条件队列、signal和await](
+- [Java并发包源码学习系列：详解Condition条件队列、signal和await](https://www.cnblogs.com/summerday152/p/14288122.html#void-await)
