@@ -4,16 +4,16 @@
 
 # Site
 title: 马根花的小菜园
-subtitle: ''
-description: 个人随笔记录
-keywords:
-author: Mark
+subtitle: '时光匆匆独白'
+description: Stay hungry, Stay foolish!
+keywords: 技术成长
+author: MarkHe1222
 language: zh-Hans
 timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://markhe1222.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:

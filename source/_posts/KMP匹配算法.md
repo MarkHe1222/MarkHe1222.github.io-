@@ -7,15 +7,15 @@ tags: Java
 
 好几次遇到关于KMP匹配算法的使用，但是每次看到以后都忘了，所以这里做个记录。
 
+<!-- more -->
+<!-- markdownlint-disable MD041 MD002--> 
+
 在B站看到三哥的2个视频，算是讲KMP最简单通俗的视频了：
 
 1. [KMP算法原理和流程](https://www.bilibili.com/video/BV1kJ411u7pt)
 2. [如何创建next数组(前缀)](https://www.bilibili.com/video/BV1iJ411u74L?t=350)
 
-<!-- more -->
-<!-- markdownlint-disable MD041 MD002--> 
-
-代码
+代码：
 
 ```java
 class Solution {

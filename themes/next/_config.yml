@@ -70,7 +70,7 @@ creative_commons:
   post: false
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
-  language:
+  language: 
 
 # Open graph settings
 # See: https://hexo.io/docs/helpers#open-graph
@@ -211,12 +211,12 @@ footer:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
     name: fa fa-heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
     color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
+  copyright: 本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！
 
   # Powered by Hexo & NexT
   powered: true
@@ -258,10 +258,10 @@ post_meta:
 # Dependencies: https://github.com/next-theme/hexo-word-counter
 symbols_count_time:
   separated_meta: true
-  item_text_total: false
+  item_text_total: true
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Donate (Sponsor) settings
 # Front-matter variable (nonsupport animation).
@@ -269,7 +269,7 @@ reward_settings:
   # If true, a donate button will be displayed in every article by default.
   enable: true
   animation: true
-  comment: 买包辣条
+  comment: 您的支持将鼓励我继续创作！买包辣条
 
 reward:
   wechatpay: /images/wechatpay.png
@@ -288,8 +288,8 @@ follow_me:
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
 related_posts:
-  enable: false
-  title: # Custom header, leave empty to use the default one
+  enable: true
+  title: 相关文章推荐 # Custom header, leave empty to use the default one
   display_in_home: false
 
 # Post edit
