@@ -12,7 +12,7 @@ AQS采用了模板方法设计模式，支持通过子类重写相应的方法�
 <!-- more -->
 <!-- markdownlint-disable MD041 MD002--> 
 
-## 1 核心思想
+# 1 核心思想
 
 假设，有四个线程由于业务需求需要同时占用某资源，但该资源在同一个时刻只能被其中唯一线程所独占。那么此时应该如何标识该资源已经被独占，同时剩余无法获取该资源的线程应该如何竞争？
 
@@ -71,7 +71,7 @@ AQS使用一个int成员变量state来表示同步状态，通过内置的FIFO�
     }
 ```
 
-## 2 CLH锁队列
+# 2 CLH锁队列
 
 同步队列被称为CLH队列，是Craig，Landin，Hagersten的合称。AQS通过内置的FIFO同步双向队列来完成资源获取线程的排队工作，内部通过节点head`实际上是虚拟节点，真正的第一个线程在head.next的位置`和tail记录队首和队尾元素，队列元素类型为Node。
 
@@ -82,7 +82,7 @@ CLH是虚拟的双向队列，底层是双向链表，包括head节点和tail结
 - 如果当前线程获取同步状态失败（锁）时，AQS 则会将当前线程以及等待状态等信息构造成一个节点（Node）并将其加入同步队列，同时会阻塞当前线程
 - 当同步状态释放时，则会把节点中的线程唤醒，使其再次尝试获取同步状态。
 
-### Node 数据结构分析
+## Node 数据结构分析
 
 ```java
   // 结点的数据结构  
@@ -176,7 +176,7 @@ CLH是虚拟的双向队列，底层是双向链表，包括head节点和tail结
     private transient volatile Node tail;
 ```
 
-### Node 的状态表「waitStatus」
+## Node 的状态表「waitStatus」
 
 | 状态名    | 状态值 | 描述                                                         |
 | :-------- | :----: | :----------------------------------------------------------- |
@@ -186,7 +186,7 @@ CLH是虚拟的双向队列，底层是双向链表，包括head节点和tail结
 | CONDITION |   -2   | 等待条件状态，表示当前节点在等待 condition，即在 condition 队列中。当其他线程对Condtion调用了signal方法后，该节点将会从等待队列中转移到同步队列中，加入到对同步状态的获取中 |
 | PROPAGATE |   -3   | 状态需要向后传播，表示 releaseShared 需要被传播给后续节点，仅在共享锁模式下使用 |
 
-## 3 AQS对资源的共享方式
+# 3 AQS对资源的共享方式
 
 线程同步的关键是对state进行操作，根据state是否属于一个线程，操作state的方式有两种模式。
 **a. 独占模式「Exclusive」**：只有一个线程能执行。使用独占的方式获取的资源是与具体线程绑定的，如果一个线程获取到了资源，便标记这个线程已经获取到，其他线程再次尝试操作state获取资源时就会发现当前该资源不是自己持有的，就会在获取失败后阻塞。又可分为公平锁和非公平锁：
@@ -196,7 +196,7 @@ CLH是虚拟的双向队列，底层是双向链表，包括head节点和tail结
 
 **b 共享模式「 Share 」**：多个线程可同时执行。对应共享方式的资源与具体线程是不相关的，当多个线程去请求资源时通过CAS 方式竞争获取资源，当一个线程获取到了资源后，另外一个线程再次去获取时如果当前资源还能满足它的需要，则当前线程只需要使用CAS 方式进行获取即可。
 
-## 4 AQS的设计模式
+# 4 AQS的设计模式
 
 AQS 同步器的设计是基于模板方法模式。使用者继承AbstractQueuedSynchronizer并重写指定的方法。实现对于共享资源state的获取和释放。
 
@@ -208,7 +208,7 @@ AQS 同步器的设计是基于模板方法模式。使用者继承AbstractQueue
 | tryReleaseShared(int arg) | **共享式**释放同步状态，同时更新同步状态。                   |
 | isHeldExclusively()       | 一般用于判断同步器是否被当前线程独占，只有用到condition才需要去实现它。 |
 
-## 5 继承的父类
+# 5 继承的父类
 
 AbstractQueuedSynchronizer继承自AbstractOwnableSynchronizer抽象类，并且实现了Serializable接口，可以进行序列化。
 
@@ -258,11 +258,11 @@ public abstract class AbstractOwnableSynchronizer
 }
 ```
 
-## 6 核心方法介绍
+# 6 核心方法介绍
 
 此文档中，先介绍AQS中核心的方法，在使用中，进行串联。
 
-#### acquire
+## acquire
 
 ```java
     /**
@@ -294,7 +294,7 @@ public abstract class AbstractOwnableSynchronizer
 2. 若tryAcquire失败，则调用addWaiter方法，addWaiter方法完成的功能是将调用此方法的线程封装成为一个结点并放入CLH队列中。
 3. 调用acquireQueued方法，此方法完成的功能是CLH中的结点不断尝试获取资源，若成功，则返回true，否则，返回false。
 
-#### tryAcquire - override
+## tryAcquire - override
 
 ```java
 // 需要子类去重写此方法完成自己的逻辑 - 试图在独占模式下获取对象状态
@@ -303,7 +303,7 @@ protected boolean tryAcquire(int arg) {
 }
 ```
 
-#### addWaiter
+## addWaiter
 
 ```java
     /**
@@ -330,7 +330,7 @@ protected boolean tryAcquire(int arg) {
     }
 ```
 
-#### enq
+## enq
 
 ```JAVA
     /**
@@ -356,7 +356,7 @@ protected boolean tryAcquire(int arg) {
     }
 ```
 
-#### acquireQueued
+## acquireQueued
 
 首先获取当前节点的前驱节点，如果前驱节点是头结点并且能够获取(资源)，代表该当前节点能够占有锁，设置头结点为当前节点，返回。
 
@@ -400,7 +400,7 @@ acquireQueued方法的整个的逻辑：
 3. 若步骤2不满足，则判断是否需要park当前线程，是否需要park当前线程的逻辑是判断结点的前驱结点的状态是否为SIGNAL，若是，则park当前结点，否则，不进行park操作。
 4. 若park了当前线程，之后某个线程对本线程unpark后，并且本线程也获得机会运行。那么，将会继续进行步骤1的判断。
 
-#### shouldParkAfterFailedAcquire
+## shouldParkAfterFailedAcquire
 
 只有当该节点的前驱结点的状态为SIGNAL时，才可以对该结点所封装的线程进行park操作。否则，将不能进行park操作。
 
@@ -445,7 +445,7 @@ acquireQueued方法的整个的逻辑：
     }
 ```
 
-####  parkAndCheckInterrupt
+## parkAndCheckInterrupt
 
 parkAndCheckInterrupt方法里的逻辑是首先执行park操作，即禁用当前线程，然后返回该线程是否已经被中断。
 
@@ -463,7 +463,7 @@ parkAndCheckInterrupt方法里的逻辑是首先执行park操作，即禁用当�
     }
 ```
 
-#### cancelAcquire
+## cancelAcquire
 
 该方法完成的功能就是取消当前线程对资源的获取，即设置该结点的状态为CANCELLED
 
@@ -519,7 +519,7 @@ parkAndCheckInterrupt方法里的逻辑是首先执行park操作，即禁用当�
     }
 ```
 
-#### unparkSuccessor
+## unparkSuccessor
 
 该方法的作用就是为了释放node节点的后继结点。
 
@@ -558,7 +558,7 @@ parkAndCheckInterrupt方法里的逻辑是首先执行park操作，即禁用当�
     }
 ```
 
-#### release
+## release
 
 以独占模式释放对象
 
@@ -584,7 +584,7 @@ parkAndCheckInterrupt方法里的逻辑是首先执行park操作，即禁用当�
     }
 ```
 
-#### tryRelease - override
+## tryRelease - override
 
 tryRelease的默认实现是抛出异常，需要具体的子类实现，如果tryRelease成功，那么如果头结点不为空并且头结点的状态不为INITAL 0，则释放头结点的后继结点
 
@@ -616,7 +616,7 @@ tryRelease的默认实现是抛出异常，需要具体的子类实现，如果t
     }
 ```
 
-#### transferForSignal
+## transferForSignal
 
 将结点从Condition队列转移到Sync队列
 
@@ -649,7 +649,7 @@ tryRelease的默认实现是抛出异常，需要具体的子类实现，如果t
     }
 ```
 
-#### fullyRelease
+## fullyRelease
 
 使用当前状态值调用 release； 返回保存状态。 取消节点并在失败时抛出异常。
 
@@ -678,7 +678,7 @@ tryRelease的默认实现是抛出异常，需要具体的子类实现，如果t
     }
 ```
 
-#### isOnSyncQueue
+## isOnSyncQueue
 
 如果一个结点（始终是最初放置在Condition队列中的结点）现在正在等待重新获取同步队列，则返回 true。
 
@@ -707,7 +707,7 @@ tryRelease的默认实现是抛出异常，需要具体的子类实现，如果t
     }
 ```
 
-#### findNodeFromTail
+## findNodeFromTail
 
 从CLH队列的最后结点向前遍历，依次判断
 
@@ -729,7 +729,7 @@ tryRelease的默认实现是抛出异常，需要具体的子类实现，如果t
     }
 ```
 
-#### transferAfterCancelledWait
+## transferAfterCancelledWait
 
 如有必要，在取消等待后将节点传输到同步队列。如果线程在发出信号之前被取消，则返回true。
 
@@ -759,9 +759,9 @@ tryRelease的默认实现是抛出异常，需要具体的子类实现，如果t
     }
 ```
 
-## 7 扩展
+# 7 扩展
 
-### Condition接口
+## Condition接口
 
 Contition是一种广义上的条件队列，它利用await()和signal()为线程提供了一种**更为灵活的等待/通知模式**。
 
@@ -786,7 +786,7 @@ public interface Condition {
 }
 ```
 
-### ConditionObject内部类
+## ConditionObject内部类
 
 ConditionObject是AQS的内部类，实现了Condition接口，Lock中提供newCondition()方法，委托给内部AQS的实现Sync来创建ConditionObject对象，使用AQS中定义的Condition。
 
@@ -797,7 +797,7 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
 - AQS维护的是当前在等待资源的队列，Condition维护的是在等待signal信号的队列；
 - 每个线程会存在上述两个队列中的一个，lock与unlock对应在AQS队列，signal与await对应条件队列，线程节点在他们之间进行切换；
 
-#### 构造方法 + 属性
+## 构造方法 + 属性
 
 ```java
     public class ConditionObject implements Condition, java.io.Serializable {
@@ -1008,9 +1008,9 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
     }
 ```
 
-#### 内部方法（private）
+## 内部方法（private）
 
-#### addConditionWaiter
+### addConditionWaiter
 
 ```java
         /**
@@ -1036,7 +1036,7 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
         }
 ```
 
-#### doSignal
+### doSignal
 
 ```java
         /**
@@ -1056,7 +1056,7 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
         }
 ```
 
-#### doSignalAll
+### doSignalAll
 
 ```java
         /**
@@ -1076,7 +1076,7 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
         }
 ```
 
-#### unlinkCancelledWaiters
+### unlinkCancelledWaiters
 
 ```java
         /**
@@ -1115,9 +1115,9 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
         }
 ```
 
-#### 公共方法 （public）
+## 公共方法 （public）
 
-#### signal
+### signal
 
 ```java
         /**
@@ -1139,7 +1139,7 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
         }
 ```
 
-#### signalAll
+### signalAll
 
 ```java
         /**
@@ -1160,7 +1160,7 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
         }
 ```
 
-#### await
+### await
 
 使当前线程等待，直到它收到信号或被中断
 
@@ -1202,11 +1202,11 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
         }
 ```
 
-#### awaitNanos
+### awaitNanos
 
 使当前线程等待，直到它被发出信号或被中断，或者指定的等待时间过去
 
- 所有 awaitXX 方法其实就是 	
+ 所有 awaitXX 方法其实就是:	
 
 1. 将当前的线程封装成 Node 加入到 Condition 里面;
 2. 丢到当前线程所拥有的独占锁
@@ -1261,9 +1261,7 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
         } 
 ```
 
-
-
-#### awaitUninterruptibly
+### awaitUninterruptibly
 
 使当前线程等待，直到它收到信号（不会响应中断）
 
@@ -1294,7 +1292,7 @@ ConditionObject用来结合锁实现线程同步，**ConditionObject可以直接
         }
 ```
 
-## 引用
+# 引用
 
 - [Java并发包源码学习系列：AbstractQueuedSynchronizer](https://www.cnblogs.com/summerday152/p/14238284.html)
 
