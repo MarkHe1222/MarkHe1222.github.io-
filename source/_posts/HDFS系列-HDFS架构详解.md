@@ -98,7 +98,7 @@ tags: [大数据, 分布式, 存储, hdfs]
 
 ## 4.3 Datanode启动流程
 
-<img src="HDFS%E7%B3%BB%E5%88%97-HDFS%E6%9E%B6%E6%9E%84%E8%AF%A6%E8%A7%A3/image-20230219184701594.png" alt="image-20230219184701594" style="zoom:67%;" />
+<img src="HDFS%E7%B3%BB%E5%88%97-HDFS%E6%9E%B6%E6%9E%84%E8%AF%A6%E8%A7%A3/image-20230220111939944.png" alt="image-20230220111939944" style="zoom:67%;" />
 
 `DN`启动后会`NN`进行交互，主要包括三个部分：
 
