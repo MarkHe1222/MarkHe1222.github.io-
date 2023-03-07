@@ -21,7 +21,7 @@ minify: false
 custom_file_path:
   #head: source/_data/head.njk
   #header: source/_data/header.njk
-  #sidebar: source/_data/sidebar.njk
+  sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
   #postBodyEnd: source/_data/post-body-end.njk
   #footer: source/_data/footer.njk
@@ -30,6 +30,9 @@ custom_file_path:
   #mixin: source/_data/mixins.styl
   #style: source/_data/styles.styl
 
+recent_posts_title: 近期文章
+recent_posts_layout: block
+recent_posts: true
 
 # ---------------------------------------------------------------
 # Scheme Settings
