@@ -44,6 +44,12 @@
           <span>0%</span>
         </div>
       {%- endif %}
+      <div class="sidebar-inner">
+        {% if theme.diy_time.clock %}
+          <!-- canvas粒子时钟 -->
+          {% include '../clock.swig' %}
+        {% endif %}
+     </div>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
