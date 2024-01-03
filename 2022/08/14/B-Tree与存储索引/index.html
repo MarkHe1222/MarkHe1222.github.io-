@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<style>:root{--body-bg-color:#fff;--content-bg-color:#fff;--card-bg-color:#f5f5f5;--text-color:#555;--blockquote-color:#666;--link-color:#555;--link-hover-color:#222;--brand-color:#fff;--brand-hover-color:#fff;--table-row-odd-bg-color:#f9f9f9;--table-row-hover-bg-color:#f5f5f5;--menu-item-bg-color:#f5f5f5;--theme-color:#222;--btn-default-bg:#222;--btn-default-color:#fff;--btn-default-border-color:#222;--btn-default-hover-bg:#fff;--btn-default-hover-color:#222;--btn-default-hover-border-color:#222;--highlight-background:#f3f3f3;--highlight-foreground:#444;--highlight-gutter-background:#e1e1e1;--highlight-gutter-foreground:#555;color-scheme:light}@media (prefers-color-scheme:dark){:root{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--theme-color:#222;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#1c1b1b;--highlight-foreground:#fff;--highlight-gutter-background:#323131;--highlight-gutter-foreground:#e8e8e8;color-scheme:dark}img{opacity:.75}img:hover{opacity:.9}iframe{color-scheme:light}}html{line-height:1.15;-webkit-text-size-adjust:100%}details,main{display:block}pre{font-size:1em;overflow:auto;padding:10px;position:relative}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}.table-container,textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}summary{display:list-item}[hidden],template{display:none}::selection{background:#262a30;color:#eee}body,html{height:100%}body{margin:0;background:var(--body-bg-color);box-sizing:border-box;color:var(--text-color);font-family:Lato,'PingFang SC','Microsoft YaHei',sans-serif;font-size:1em;line-height:2;min-height:100%;position:relative;transition:padding .2s ease-in-out}h1,h2,h3,h4,h5,h6{font-family:Lato,'PingFang SC','Microsoft YaHei',sans-serif;font-weight:700;line-height:1.5;margin:30px 0 15px}h1{font-size:1.5em}h2{font-size:1.375em}h3{font-size:1.25em}h4{font-size:1.125em}h5{font-size:1em}h6{font-size:.875em}p{margin:0 0 20px}a{background:0 0;border-bottom:1px solid #999;color:var(--link-color);cursor:pointer;outline:0;text-decoration:none;overflow-wrap:break-word}a:hover{border-bottom-color:var(--link-hover-color);color:var(--link-hover-color)}embed,iframe,img,video{display:block;margin-left:auto;margin-right:auto;max-width:100%}hr{box-sizing:content-box;overflow:visible;background-image:repeating-linear-gradient(-45deg,#ddd,#ddd 4px,transparent 4px,transparent 8px);border:0;height:3px;margin:40px 0}blockquote{border-left:4px solid #ddd;color:var(--blockquote-color);margin:0;padding:0 15px}blockquote cite::before{content:'-';padding:0 5px}dt{font-weight:700}dd{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0;font-size:.875em;margin:0 0 20px;width:100%}tbody tr:nth-of-type(odd){background:var(--table-row-odd-bg-color)}tbody tr:hover{background:var(--table-row-hover-bg-color)}caption,td,th{padding:8px}td,th{border:1px solid #ddd;border-bottom:3px solid #ddd}th{font-weight:700;padding-bottom:10px}td{border-bottom-width:1px}.btn{background:var(--btn-default-bg);border:2px solid var(--btn-default-border-color);border-radius:0;color:var(--btn-default-color);display:inline-block;font-size:.875em;line-height:2;padding:0 20px;transition:background-color .2s ease-in-out}.btn:hover{background:var(--btn-default-hover-bg);border-color:var(--btn-default-hover-border-color);color:var(--btn-default-hover-color)}.btn+.btn{margin:0 0 8px 8px}.btn .fa-fw{text-align:left;width:1.285714285714286em}.toggle{line-height:0}.toggle .toggle-line{background:#fff;display:block;height:2px;left:0;position:relative;top:0;transition:.4s;width:100%}.toggle .toggle-line:not(:first-child){margin-top:3px}.toggle.toggle-arrow .toggle-line:first-child{top:2px;transform:rotate(-45deg);width:50%}.toggle.toggle-arrow .toggle-line:last-child{top:-2px;transform:rotate(45deg);width:50%}.toggle.toggle-close .toggle-line:nth-child(2){opacity:0}.toggle.toggle-close .toggle-line:first-child{top:5px;transform:rotate(-45deg)}.toggle.toggle-close .toggle-line:last-child{top:-5px;transform:rotate(45deg)}/*!
+  Theme: Default
+  Description: Original highlight.js style
+  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+  Maintainer: @highlightjs/core-team
+  Website: https://highlightjs.org/
+  License: see project LICENSE
+  Touched: 2021
+*/pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#f3f3f3;color:#444}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}@media (prefers-color-scheme:dark){pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
+  Theme: StackOverflow Dark
+  Description: Dark theme as used on stackoverflow.com
+  Author: stackoverflow.com
+  Maintainer: @Hirse
+  Website: https://github.com/StackExchange/Stacks
+  License: MIT
+  Updated: 2021-05-15
+
+  Updated for @stackoverflow/stacks v0.64.0
+  Code Blocks: /blob/v0.64.0/lib/css/components/_stacks-code-blocks.less
+  Colors: /blob/v0.64.0/lib/css/exports/_stacks-constants-colors.less
+*/.hljs{color:#fff;background:#1c1b1b}.hljs-subst{color:#fff}.hljs-comment{color:#999}.hljs-attr,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-section,.hljs-selector-tag{color:#88aece}.hljs-attribute{color:#c59bc1}.hljs-name,.hljs-number,.hljs-quote,.hljs-selector-id,.hljs-template-tag,.hljs-type{color:#f08d49}.hljs-selector-class{color:#88aece}.hljs-link,.hljs-regexp,.hljs-selector-attr,.hljs-string,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#b5bd68}.hljs-meta,.hljs-selector-pseudo{color:#88aece}.hljs-built_in,.hljs-literal,.hljs-title{color:#f08d49}.hljs-bullet,.hljs-code{color:#ccc}.hljs-meta .hljs-string{color:#b5bd68}.hljs-deletion{color:#de7176}.hljs-addition{color:#76c490}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}}.highlight:hover .copy-btn,pre:hover .copy-btn{opacity:1}figure.highlight .table-container{position:relative;border-radius:0 0 5px 5px}.copy-btn{color:#333;cursor:pointer;line-height:1.6;opacity:0;padding:2px 6px;position:absolute;transition:opacity .2s ease-in-out;color:var(--highlight-foreground);font-size:14px;right:0;top:2px}figure.highlight{border-radius:5px;box-shadow:0 10px 30px 0 rgba(0,0,0,.4);padding-top:30px;position:relative}figure.highlight::before{background:#fc625d;box-shadow:20px 0 #fdbc40,40px 0 #35cd4b;left:12px;margin-top:-20px;position:absolute;border-radius:50%;content:' ';height:12px;width:12px}code,figure.highlight,kbd,pre{background:var(--highlight-background);color:var(--highlight-foreground)}figure.highlight,pre{line-height:1.6;margin:0 auto 20px}figure.highlight figcaption,pre .caption,pre figcaption{background:var(--highlight-gutter-background);color:var(--highlight-foreground);display:flow-root;font-size:.875em;line-height:1.2;padding:.5em}figure.highlight figcaption a,pre .caption a,pre figcaption a{color:var(--highlight-foreground);float:right}figure.highlight figcaption a:hover,pre .caption a:hover,pre figcaption a:hover{border-bottom-color:var(--highlight-foreground)}code,pre{font-family:consolas,Menlo,monospace,'PingFang SC','Microsoft YaHei'}code{border-radius:3px;font-size:.875em;padding:2px 4px;overflow-wrap:break-word}kbd{border:2px solid #ccc;border-radius:.2em;box-shadow:.1em .1em .2em rgba(0,0,0,.1);font-family:inherit;padding:.1em .3em;white-space:nowrap}figure.highlight pre{border:0;margin:0;padding:10px 0}figure.highlight table{border:0;margin:0;width:auto}figure.highlight td{border:0;padding:0}figure.highlight .gutter{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;user-select:none}figure.highlight .gutter pre{background:var(--highlight-gutter-background);color:var(--highlight-gutter-foreground);padding-left:10px;padding-right:10px;text-align:right}figure.highlight .code pre{padding-left:10px;width:100%}figure.highlight .marked{background:rgba(0,0,0,.3)}pre .caption,pre figcaption{margin-bottom:10px}.gist table{width:auto}.gist table td{border:0}pre code{background:0 0;padding:0;text-shadow:none}.blockquote-center{border-left:0;margin:40px 0;padding:0;position:relative;text-align:center}.blockquote-center::after,.blockquote-center::before{left:0;line-height:1;opacity:.6;position:absolute;width:100%}.blockquote-center::before{border-top:1px solid #ccc;text-align:left;top:-20px;content:'\f10d';font-family:'Font Awesome 5 Free';font-weight:900}.blockquote-center::after{border-bottom:1px solid #ccc;bottom:-20px;text-align:right;content:'\f10e';font-family:'Font Awesome 5 Free';font-weight:900}.blockquote-center div,.blockquote-center p{text-align:center}.group-picture{margin-bottom:20px}.group-picture .group-picture-row{display:flex;gap:3px;margin-bottom:3px}.group-picture .group-picture-column{flex:1}.group-picture .group-picture-column img{height:100%;margin:0;object-fit:cover;width:100%}.post-body .label{color:#555;padding:0 2px}.post-body .label.default{background:#f0f0f0}.post-body .label.primary{background:#efe6f7}.post-body .label.info{background:#e5f2f8}.post-body .label.success{background:#e7f4e9}.post-body .label.warning{background:#fcf6e1}.post-body .label.danger{background:#fae8eb}.post-body .link-grid{display:grid;grid-gap:1.5rem;gap:1.5rem;grid-template-columns:1fr 1fr;margin-bottom:20px;padding:1rem}.post-body .link-grid .link-grid-container{border:solid #ddd;box-shadow:1rem 1rem .5rem rgba(0,0,0,.5);min-height:5rem;min-width:0;padding:.5rem;position:relative;transition:background .3s}.post-body .link-grid .link-grid-container:hover{animation:.5s next-shake;background:var(--card-bg-color)}.post-body .link-grid .link-grid-container:active{box-shadow:.5rem .5rem .25rem rgba(0,0,0,.5);transform:translate(.2rem,.2rem)}.post-body .link-grid .link-grid-container .link-grid-image{border:1px solid #ddd;border-radius:50%;box-sizing:border-box;height:5rem;padding:3px;position:absolute;width:5rem}.post-body .link-grid .link-grid-container p{margin:0 1rem 0 6rem}.post-body .link-grid .link-grid-container p:first-of-type{font-size:1.2em}.post-body .link-grid .link-grid-container p:last-of-type{font-size:.8em;line-height:1.3rem;opacity:.7}.post-body .link-grid .link-grid-container a{border:0;height:100%;left:0;position:absolute;top:0;width:100%}@-moz-keyframes next-shake{0%{transform:translate(1pt,1pt) rotate(0)}10%{transform:translate(-1pt,-2pt) rotate(-1deg)}20%{transform:translate(-3pt,0) rotate(1deg)}30%{transform:translate(3pt,2pt) rotate(0)}40%{transform:translate(1pt,-1pt) rotate(1deg)}50%{transform:translate(-1pt,2pt) rotate(-1deg)}60%{transform:translate(-3pt,1pt) rotate(0)}70%{transform:translate(3pt,1pt) rotate(-1deg)}80%{transform:translate(-1pt,-1pt) rotate(1deg)}90%{transform:translate(1pt,2pt) rotate(0)}100%{transform:translate(1pt,-2pt) rotate(-1deg)}}@-webkit-keyframes next-shake{0%{transform:translate(1pt,1pt) rotate(0)}10%{transform:translate(-1pt,-2pt) rotate(-1deg)}20%{transform:translate(-3pt,0) rotate(1deg)}30%{transform:translate(3pt,2pt) rotate(0)}40%{transform:translate(1pt,-1pt) rotate(1deg)}50%{transform:translate(-1pt,2pt) rotate(-1deg)}60%{transform:translate(-3pt,1pt) rotate(0)}70%{transform:translate(3pt,1pt) rotate(-1deg)}80%{transform:translate(-1pt,-1pt) rotate(1deg)}90%{transform:translate(1pt,2pt) rotate(0)}100%{transform:translate(1pt,-2pt) rotate(-1deg)}}@-o-keyframes next-shake{0%{transform:translate(1pt,1pt) rotate(0)}10%{transform:translate(-1pt,-2pt) rotate(-1deg)}20%{transform:translate(-3pt,0) rotate(1deg)}30%{transform:translate(3pt,2pt) rotate(0)}40%{transform:translate(1pt,-1pt) rotate(1deg)}50%{transform:translate(-1pt,2pt) rotate(-1deg)}60%{transform:translate(-3pt,1pt) rotate(0)}70%{transform:translate(3pt,1pt) rotate(-1deg)}80%{transform:translate(-1pt,-1pt) rotate(1deg)}90%{transform:translate(1pt,2pt) rotate(0)}100%{transform:translate(1pt,-2pt) rotate(-1deg)}}@keyframes next-shake{0%{transform:translate(1pt,1pt) rotate(0)}10%{transform:translate(-1pt,-2pt) rotate(-1deg)}20%{transform:translate(-3pt,0) rotate(1deg)}30%{transform:translate(3pt,2pt) rotate(0)}40%{transform:translate(1pt,-1pt) rotate(1deg)}50%{transform:translate(-1pt,2pt) rotate(-1deg)}60%{transform:translate(-3pt,1pt) rotate(0)}70%{transform:translate(3pt,1pt) rotate(-1deg)}80%{transform:translate(-1pt,-1pt) rotate(1deg)}90%{transform:translate(1pt,2pt) rotate(0)}100%{transform:translate(1pt,-2pt) rotate(-1deg)}}.post-body .note{border-radius:3px;margin-bottom:20px;padding:1em;position:relative;border:1px solid #eee;border-left-width:5px}.post-body .note summary{cursor:pointer;outline:0}.post-body .note summary p{display:inline}.post-body .note h2,.post-body .note h3,.post-body .note h4,.post-body .note h5,.post-body .note h6{border-bottom:initial;margin:0;padding-top:0}.post-body .note blockquote:first-child,.post-body .note img:first-child,.post-body .note ol:first-child,.post-body .note p:first-child,.post-body .note pre:first-child,.post-body .note table:first-child,.post-body .note ul:first-child{margin-top:0}.post-body .note blockquote:last-child,.post-body .note img:last-child,.post-body .note ol:last-child,.post-body .note p:last-child,.post-body .note pre:last-child,.post-body .note table:last-child,.post-body .note ul:last-child{margin-bottom:0}.post-body .note.default{border-left-color:#777}.post-body .note.default h2,.post-body .note.default h3,.post-body .note.default h4,.post-body .note.default h5,.post-body .note.default h6{color:#777}.post-body .note.primary{border-left-color:#6f42c1}.post-body .note.primary h2,.post-body .note.primary h3,.post-body .note.primary h4,.post-body .note.primary h5,.post-body .note.primary h6{color:#6f42c1}.post-body .note.info{border-left-color:#428bca}.post-body .note.info h2,.post-body .note.info h3,.post-body .note.info h4,.post-body .note.info h5,.post-body .note.info h6{color:#428bca}.post-body .note.success{border-left-color:#5cb85c}.post-body .note.success h2,.post-body .note.success h3,.post-body .note.success h4,.post-body .note.success h5,.post-body .note.success h6{color:#5cb85c}.post-body .note.warning{border-left-color:#f0ad4e}.post-body .note.warning h2,.post-body .note.warning h3,.post-body .note.warning h4,.post-body .note.warning h5,.post-body .note.warning h6{color:#f0ad4e}.post-body .note.danger{border-left-color:#d9534f}.post-body .note.danger h2,.post-body .note.danger h3,.post-body .note.danger h4,.post-body .note.danger h5,.post-body .note.danger h6{color:#d9534f}.post-body .tabs{margin-bottom:20px}.post-body .tabs,.tabs-comment{padding-top:10px}.post-body .tabs ul.nav-tabs,.tabs-comment ul.nav-tabs{background:var(--body-bg-color);display:flex;display:flex;flex-wrap:wrap;justify-content:center;margin:0;padding:0;position:-webkit-sticky;position:sticky;top:0;z-index:5}.post-body .tabs ul.nav-tabs li.tab,.tabs-comment ul.nav-tabs li.tab{border-bottom:1px solid #ddd;border-left:1px solid transparent;border-right:1px solid transparent;border-radius:0;border-top:3px solid transparent;flex-grow:1;list-style-type:none}@media (max-width:413px){.post-body .tabs ul.nav-tabs,.tabs-comment ul.nav-tabs{display:block;margin-bottom:5px}.post-body .tabs ul.nav-tabs li.tab,.tabs-comment ul.nav-tabs li.tab{border-bottom:1px solid transparent;border-left:3px solid transparent;border-right:1px solid transparent;border-top:1px solid transparent;border-radius:0}}.post-body .tabs ul.nav-tabs li.tab a,.tabs-comment ul.nav-tabs li.tab a{border-bottom:initial;display:block;line-height:1.8;padding:.25em .75em;text-align:center;transition:.2s ease-out}.post-body .tabs ul.nav-tabs li.tab a i,.tabs-comment ul.nav-tabs li.tab a i{width:1.285714285714286em}.post-body .tabs ul.nav-tabs li.tab.active,.tabs-comment ul.nav-tabs li.tab.active{border-color:#fc6423 #ddd transparent}@media (max-width:413px){.post-body .tabs ul.nav-tabs li.tab.active,.tabs-comment ul.nav-tabs li.tab.active{border-color:#ddd #ddd #ddd #fc6423}}.post-body .tabs ul.nav-tabs li.tab.active a,.tabs-comment ul.nav-tabs li.tab.active a{cursor:default}.post-body .tabs .tab-content,.tabs-comment .tab-content{border:1px solid #ddd;border-radius:0;border-top-color:transparent}@media (max-width:413px){.post-body .tabs .tab-content,.tabs-comment .tab-content{border-radius:0;border-top-color:#ddd}}.post-body .tabs .tab-content .tab-pane,.tabs-comment .tab-content .tab-pane{padding:20px 20px 0}.post-body .tabs .tab-content .tab-pane:not(.active),.tabs-comment .tab-content .tab-pane:not(.active){display:none}.pagination .next,.pagination .page-number,.pagination .prev,.pagination .space{display:inline-block;margin:-1px 10px 0;padding:0 10px}.pagination .page-number.current{background:#ccc;border-color:#ccc;color:var(--content-bg-color)}.pagination{border-top:1px solid #eee;margin:120px 0 0;text-align:center}.pagination .next,.pagination .page-number,.pagination .prev{border-bottom:0;border-top:1px solid #eee;transition:border-color .2s ease-in-out}.pagination .next:hover,.pagination .page-number:hover,.pagination .prev:hover{border-top-color:var(--link-hover-color)}@media (max-width:767px){.post-body .link-grid{grid-template-columns:1fr}.pagination .next,.pagination .page-number,.pagination .prev,.pagination .space{margin:0 5px}.pagination{border-top:0}.pagination .next,.pagination .page-number,.pagination .prev{border-bottom:1px solid #eee;border-top:0}.pagination .next:hover,.pagination .page-number:hover,.pagination .prev:hover{border-bottom-color:var(--link-hover-color)}.site-meta{text-align:center}}.pagination .space{margin:0;padding:0}.comments{margin-top:60px;overflow:hidden}.comment-button-group{display:flex;display:flex;flex-wrap:wrap;justify-content:center;justify-content:center;margin:1em 0}.comment-button-group .comment-button{margin:.1em .2em}.comment-button-group .comment-button.active{background:var(--btn-default-hover-bg);border-color:var(--btn-default-hover-border-color);color:var(--btn-default-hover-color)}.comment-position{display:none}.comment-position.active{display:block}.tabs-comment{margin-top:4em;padding-top:0}.tabs-comment .comments{margin-top:0;padding-top:0}.headband{background:var(--theme-color);height:3px}@media (max-width:991px){.headband{display:none}}header.header{background:0 0}.header-inner{margin:0 auto;width:700px}@media (min-width:1200px){.header-inner{width:800px}}@media (min-width:1600px){.header-inner{width:900px}}.site-brand-container{display:flex;flex-shrink:0;padding:0 10px}.use-motion .site-brand-container .toggle,.use-motion header.header{opacity:0}.site-meta{flex-grow:1;text-align:center}@media (max-width:991px){.custom-logo-image{display:none}}.brand{border-bottom:0;color:var(--brand-color);display:inline-block;padding:0 40px}.brand:hover{color:var(--brand-hover-color)}.site-title{font-family:Lato,'PingFang SC','Microsoft YaHei',sans-serif;font-size:1.375em;font-weight:400;line-height:1.5;margin:0}.site-subtitle{color:#999;font-size:.8125em;margin:10px 0}.use-motion .custom-logo-image,.use-motion .site-subtitle,.use-motion .site-title{opacity:0;position:relative;top:-10px}.site-nav-right,.site-nav-toggle{display:none}.site-nav-right .toggle,.site-nav-toggle .toggle{color:var(--text-color);padding:10px;width:22px}.site-nav-right .toggle .toggle-line,.site-nav-toggle .toggle .toggle-line{background:var(--text-color);border-radius:1px}@media (max-width:767px){.site-nav-right,.site-nav-toggle{display:flex;flex-direction:column;justify-content:center}.site-nav{--scroll-height:0;height:0;overflow:hidden;transition:height .2s ease-in-out}body:not(.site-nav-on) .site-nav .animated{animation:none}body.site-nav-on .site-nav{height:var(--scroll-height)}}.menu{margin:0;padding:1em 0;text-align:center}.menu-item{display:inline-block;list-style:none;margin:0 10px}@media (max-width:767px){.menu-item{display:block;margin-top:10px}.menu-item.menu-item-search{display:none}}.menu-item a{border-bottom:0;display:block;font-size:.8125em;transition:border-color .2s ease-in-out}.menu-item a.menu-item-active,.menu-item a:hover{background:var(--menu-item-bg-color)}.menu-item .fa,.menu-item .fab,.menu-item .far,.menu-item .fas{margin-right:8px}.menu-item .badge{display:inline-block;font-weight:700;line-height:1;margin-left:.35em;margin-top:.35em;text-align:center;white-space:nowrap}@media (max-width:767px){.menu-item .badge{float:right;margin-left:0}}.use-motion .menu-item{visibility:hidden}.sidebar-inner{color:#999;max-height:calc(100vh - 36px);padding:18px 10px;text-align:center;display:flex;flex-direction:column;justify-content:center}.site-overview-item:not(:first-child){margin-top:10px}.cc-license .cc-opacity{border-bottom:0;opacity:.7}.cc-license .cc-opacity:hover{opacity:.9}.cc-license img{display:inline-block}.site-author-image{border:2px solid #333;max-width:96px;padding:2px;border-radius:50%;transition:transform 1s ease-out}.site-author-image:hover{transform:rotateZ(360deg)}.site-author-name{color:#f5f5f5;font-weight:400;margin:5px 0 0}.site-description{color:#999;font-size:1em;margin-top:5px}.links-of-author a{font-size:.8125em}.links-of-author .fa,.links-of-author .fab,.links-of-author .far,.links-of-author .fas{margin-right:2px}.sidebar .sidebar-button:not(:first-child){margin-top:15px}.sidebar .sidebar-button button{background:0 0;color:#fc6423;cursor:pointer;line-height:2;padding:0 15px;border:1px solid #fc6423;border-radius:4px}.sidebar .sidebar-button button:hover{background:#fc6423;color:#fff}.sidebar .sidebar-button button .fa,.sidebar .sidebar-button button .fab,.sidebar .sidebar-button button .far,.sidebar .sidebar-button button .fas{margin-right:5px}.links-of-blogroll{font-size:.8125em}.links-of-blogroll-title{font-size:.875em;font-weight:600;margin-top:0}.links-of-blogroll-list{list-style:none;margin:0;padding:0}.sidebar-dimmer{display:none}@media (max-width:991px){.sidebar-dimmer{background:#000;display:block;height:100%;left:0;opacity:0;position:fixed;top:0;transition:visibility .4s,opacity .4s;visibility:hidden;width:100%;z-index:10}.sidebar-active .sidebar-dimmer{opacity:.7;visibility:visible}}.sidebar-nav{display:none;margin:0;padding-bottom:20px;padding-left:0}.sidebar-nav-active .sidebar-nav{display:block}.sidebar-nav li{border-bottom:1px solid transparent;color:#666;cursor:pointer;display:inline-block;font-size:.875em}.sidebar-nav li.sidebar-nav-overview{margin-left:10px}.sidebar-nav li:hover{color:#f5f5f5}.sidebar-overview-active .sidebar-nav-overview,.sidebar-toc-active .sidebar-nav-toc{border-bottom-color:#87daff;color:#87daff}.sidebar-overview-active .sidebar-nav-overview:hover,.sidebar-toc-active .sidebar-nav-toc:hover{color:#87daff}.sidebar-panel-container{flex:1;overflow-x:hidden;overflow-y:auto}.sidebar-panel{display:none}.sidebar-overview-active .site-overview-wrap{display:flex;flex-direction:column;justify-content:center}.sidebar-toc-active .post-toc-wrap{display:block}.sidebar-toggle{bottom:45px;height:12px;padding:6px 5px;width:14px;background:#222;cursor:pointer;opacity:.8;position:fixed;z-index:30;right:30px}.sidebar-toggle:hover{opacity:1}@media (max-width:991px){.sidebar-toggle{right:20px;opacity:1}}.sidebar-toggle:hover .toggle-line{background:#87daff}@media (any-hover:hover){body:not(.sidebar-active) .sidebar-toggle:hover .toggle-line:first-child{top:2px;transform:rotate(-45deg);width:50%}body:not(.sidebar-active) .sidebar-toggle:hover .toggle-line:last-child{top:-2px;transform:rotate(45deg);width:50%}}.sidebar-active .sidebar-toggle .toggle-line:nth-child(2){opacity:0}.sidebar-active .sidebar-toggle .toggle-line:first-child{top:5px;transform:rotate(-45deg)}.sidebar-active .sidebar-toggle .toggle-line:last-child{top:-5px;transform:rotate(45deg)}.post-toc{font-size:.875em}.post-toc ol{list-style:none;margin:0;padding:0 2px 5px 10px;text-align:left}.post-toc ol>ol{padding-left:0}.post-toc ol a{transition:.2s ease-in-out}.post-toc .nav-item{line-height:1.8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.post-toc .nav .nav-child{display:none}.post-toc .nav .active-current>.nav-child,.post-toc .nav .active-current>.nav-child>.nav-item,.post-toc .nav .active>.nav-child{display:block}.post-toc .nav .active>a{border-bottom-color:#87daff;color:#87daff}.post-toc .nav .active-current>a,.post-toc .nav .active-current>a:hover{color:#87daff}.site-state{display:flex;flex-wrap:wrap;justify-content:center;line-height:1.4}.site-state-item{padding:0 15px}.site-state-item a{border-bottom:0;display:block}.site-state-item-count{display:block;font-size:1.25em;font-weight:600}.site-state-item-name{color:inherit;font-size:.875em}.footer{color:#999;font-size:.875em;padding:20px 0}.footer.footer-fixed{bottom:0;left:0;position:absolute;right:0}.footer-inner{box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;margin:0 auto;width:700px}@media (min-width:1200px){.footer-inner{width:800px}}@media (min-width:1600px){.footer-inner{width:900px}}.use-motion .footer{opacity:0}.languages{display:inline-block;font-size:1.125em;position:relative}.languages .lang-select-label span{margin:0 .5em}.languages .lang-select{height:100%;left:0;opacity:0;position:absolute;top:0;width:100%}.with-love{color:red;display:inline-block;margin:0 5px;animation:1.33s ease-in-out infinite icon-animate}.busuanzi-count #busuanzi_container_site_pv,.busuanzi-count #busuanzi_container_site_uv{display:none}@-moz-keyframes icon-animate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,50%,60%,70%,80%{transform:scale(1.1)}}@-webkit-keyframes icon-animate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,50%,60%,70%,80%{transform:scale(1.1)}}@-o-keyframes icon-animate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,50%,60%,70%,80%{transform:scale(1.1)}}@keyframes icon-animate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,50%,60%,70%,80%{transform:scale(1.1)}}.noscript-warning{background-color:#f55;color:#fff;font-family:sans-serif;font-size:1rem;font-weight:700;left:0;position:fixed;text-align:center;top:0;width:100%;z-index:50}.back-to-top{font-size:12px;margin:8px -10px -20px;opacity:0;transition:opacity .2s ease-in-out}.back-to-top.back-to-top-on{cursor:pointer;opacity:.8}.back-to-top.back-to-top-on:hover{opacity:1}.reading-progress-bar{--progress:0;background:#37c6c0;height:3px;position:fixed;z-index:50;width:var(--progress);left:0;top:0}.rtl.post-body a,.rtl.post-body h1,.rtl.post-body h2,.rtl.post-body h3,.rtl.post-body h4,.rtl.post-body h5,.rtl.post-body h6,.rtl.post-body li,.rtl.post-body ol,.rtl.post-body p,.rtl.post-body ul{direction:rtl;font-family:UKIJ Ekran}.rtl.post-title{font-family:UKIJ Ekran}.post-button{margin-top:40px;text-align:center}.use-motion .collection-header,.use-motion .comments,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{visibility:hidden}.posts-collapse .post-content{margin-bottom:35px;margin-left:35px;position:relative}@media (max-width:767px){.posts-collapse .post-content{margin-left:0;margin-right:0}}.posts-collapse .post-content .collection-title{font-size:1.125em;position:relative}.posts-collapse .post-content .collection-title::before{background:#999;border:1px solid #fff;margin-left:-6px;margin-top:-4px;position:absolute;top:50%;border-radius:50%;content:' ';height:10px;width:10px}.posts-collapse .post-content .collection-year{font-size:1.5em;font-weight:700;margin:60px 0;position:relative}.posts-collapse .post-content .collection-year::before{background:#bbb;margin-left:-4px;margin-top:-4px;position:absolute;top:50%;border-radius:50%;content:' ';height:8px;width:8px}.posts-collapse .post-content .collection-header{display:block;margin-left:20px}.posts-collapse .post-content .collection-header small{color:#bbb;margin-left:5px}.posts-collapse .post-content .post-header{border-bottom:1px dashed #ccc;margin:30px 2px 0;padding-left:15px;position:relative;transition:border .2s ease-in-out}.posts-collapse .post-content .post-header::before{background:#bbb;border:1px solid #fff;left:-6px;position:absolute;top:.75em;transition:background .2s ease-in-out;border-radius:50%;content:' ';height:6px;width:6px}.posts-collapse .post-content .post-header:hover{border-bottom-color:#666}.posts-collapse .post-content .post-header:hover::before{background:#222}.posts-collapse .post-content .post-meta-container{display:inline;font-size:.75em;margin-right:10px}.posts-collapse .post-content .post-title{display:inline}.posts-collapse .post-content .post-title a{border-bottom:0;color:var(--link-color)}.posts-collapse .post-content .post-title .fa-external-link-alt{font-size:.875em;margin-left:5px}.posts-collapse .post-content::before{background:#f5f5f5;content:' ';height:100%;margin-left:-2px;position:absolute;top:1.25em;width:4px}.post-body{font-family:Lato,'PingFang SC','Microsoft YaHei',sans-serif;overflow-wrap:break-word}@media (min-width:1200px){.post-body{font-size:1.125em}}@media (min-width:992px){.post-body{text-align:justify}}.post-body h1 .header-anchor,.post-body h1 .headerlink,.post-body h2 .header-anchor,.post-body h2 .headerlink,.post-body h3 .header-anchor,.post-body h3 .headerlink,.post-body h4 .header-anchor,.post-body h4 .headerlink,.post-body h5 .header-anchor,.post-body h5 .headerlink,.post-body h6 .header-anchor,.post-body h6 .headerlink{border-bottom-style:none;color:inherit;float:right;font-size:.875em;margin-left:10px;opacity:0}.post-body h1 .header-anchor::before,.post-body h1 .headerlink::before,.post-body h2 .header-anchor::before,.post-body h2 .headerlink::before,.post-body h3 .header-anchor::before,.post-body h3 .headerlink::before,.post-body h4 .header-anchor::before,.post-body h4 .headerlink::before,.post-body h5 .header-anchor::before,.post-body h5 .headerlink::before,.post-body h6 .header-anchor::before,.post-body h6 .headerlink::before{content:'\f0c1';font-family:'Font Awesome 5 Free';font-weight:900}.post-body h1:hover .header-anchor,.post-body h1:hover .headerlink,.post-body h2:hover .header-anchor,.post-body h2:hover .headerlink,.post-body h3:hover .header-anchor,.post-body h3:hover .headerlink,.post-body h4:hover .header-anchor,.post-body h4:hover .headerlink,.post-body h5:hover .header-anchor,.post-body h5:hover .headerlink,.post-body h6:hover .header-anchor,.post-body h6:hover .headerlink{opacity:.5}.post-body h1:hover .header-anchor:hover,.post-body h1:hover .headerlink:hover,.post-body h2:hover .header-anchor:hover,.post-body h2:hover .headerlink:hover,.post-body h3:hover .header-anchor:hover,.post-body h3:hover .headerlink:hover,.post-body h4:hover .header-anchor:hover,.post-body h4:hover .headerlink:hover,.post-body h5:hover .header-anchor:hover,.post-body h5:hover .headerlink:hover,.post-body h6:hover .header-anchor:hover,.post-body h6:hover .headerlink:hover{opacity:1}.post-body .exturl .fa{font-size:.875em;margin-left:4px}.post-body .fancybox+figcaption,.post-body .image-caption,.post-body img+figcaption{color:#999;font-size:.875em;font-weight:700;line-height:1;margin:-15px auto 15px;text-align:center}.post-body embed,.post-body iframe,.post-body img,.post-body video{margin-bottom:20px}.post-body .video-container{height:0;margin-bottom:20px;overflow:hidden;padding-top:75%;position:relative;width:100%}.post-body .video-container embed,.post-body .video-container iframe,.post-body .video-container object{height:100%;left:0;margin:0;position:absolute;top:0;width:100%}.post-gallery{display:flex;min-height:200px}.post-gallery .post-gallery-image{flex:1}.post-gallery .post-gallery-image:not(:first-child){clip-path:polygon(40px 0,100% 0,100% 100%,0 100%);margin-left:-20px}.post-gallery .post-gallery-image:not(:last-child){margin-right:-20px}.post-gallery .post-gallery-image img{height:100%;object-fit:cover;opacity:1;width:100%}.posts-expand .post-gallery{margin-bottom:60px}.posts-collapse .post-gallery{margin:15px 0}.posts-expand .post-header{font-size:1.125em;margin-bottom:60px;text-align:center}.posts-expand .post-title{font-size:1.5em;font-weight:400;margin:initial;overflow-wrap:break-word}.posts-expand .post-title-link{border-bottom:0;color:var(--link-color);display:inline-block;position:relative}.posts-expand .post-title-link::before{background:var(--link-color);bottom:0;content:'';height:2px;left:0;position:absolute;transform:scaleX(0);transition:transform .2s ease-in-out;width:100%}.posts-expand .post-title-link:hover::before{transform:scaleX(1)}.posts-expand .post-title-link .fa-external-link-alt{font-size:.875em;margin-left:5px}.post-sticky-flag{display:inline-block;margin-right:8px;transform:rotate(30deg)}.posts-expand .post-meta-container{color:#999;font-family:Lato,'PingFang SC','Microsoft YaHei',sans-serif;font-size:.75em;margin-top:3px}.posts-expand .post-meta-container .post-description{font-size:.875em;margin-top:2px}.posts-expand .post-meta-container time{border-bottom:1px dashed #999}.post-meta{display:flex;flex-wrap:wrap;justify-content:center}:not(.post-meta-break)+.post-meta-item::before{content:'|';margin:0 .5em}.post-meta-item-icon{margin-right:3px}@media (max-width:991px){.post-body{text-align:justify}.post-meta-item-text{display:none}}.post-meta-break{flex-basis:100%;height:0}#busuanzi_container_page_pv{display:none}.post-nav{border-top:1px solid #eee;display:flex;gap:30px;justify-content:space-between;margin-top:1em;padding:10px 5px 0}.post-nav-item{flex:1}.post-nav-item a{border-bottom:0;display:block;font-size:.875em;line-height:1.6}.post-nav-item a:active{top:2px}.post-nav-item .fa{font-size:.75em}.post-nav-item:first-child .fa{margin-right:5px}.post-nav-item:last-child{text-align:right}.post-nav-item:last-child .fa{margin-left:5px}.post-footer{display:flex;flex-direction:column;justify-content:center}.post-eof{background:#ccc;height:1px;margin:80px auto 60px;width:8%}.post-block:last-of-type .post-eof{display:none}.post-tags{margin-top:40px;text-align:center}.post-tags a{display:inline-block;font-size:.8125em}.post-tags a:not(:last-child){margin-right:10px}.post-widgets{border-top:1px solid #eee;margin-top:15px;text-align:center}.wpac-rating-container{height:20px;line-height:20px;margin-top:10px;padding-top:6px;text-align:center}.social-like{display:flex;font-size:.875em;justify-content:center;text-align:center}.reward-container{margin:1em 0 0;padding:1em 0;text-align:center}.reward-container button{background:0 0;color:#87daff;cursor:pointer;line-height:2;padding:0 15px;border:2px solid #87daff;border-radius:2px;outline:0;transition:.2s ease-in-out;vertical-align:text-top}.reward-container button:hover{background:#87daff;color:#fff}.post-reward{display:none;padding-top:20px}.post-reward.active{display:block}.post-reward div{display:inline-block}.post-reward div span{display:block}.post-reward div:hover span{animation:.1s linear infinite next-roll;pointer-events:none}.post-reward img{display:inline-block;margin:.8em 2em 0;max-width:100%;width:180px}@-moz-keyframes next-roll{from{transform:rotateZ(30deg)}to{transform:rotateZ(-30deg)}}@-webkit-keyframes next-roll{from{transform:rotateZ(30deg)}to{transform:rotateZ(-30deg)}}@-o-keyframes next-roll{from{transform:rotateZ(30deg)}to{transform:rotateZ(-30deg)}}@keyframes next-roll{from{transform:rotateZ(30deg)}to{transform:rotateZ(-30deg)}}.category-all-page .category-all-title{text-align:center}.category-all-page .category-all{margin-top:20px}.category-all-page .category-list{list-style:none;margin:0;padding:0}.category-all-page .category-list-item{margin:5px 10px}.category-all-page .category-list-count{color:#bbb}.category-all-page .category-list-count::before{content:' ('}.category-all-page .category-list-count::after{content:') '}.category-all-page .category-list-child{padding-left:10px}.event-list hr{background:#222;margin:20px 0 45px}.event-list hr::after{background:#222;color:#fff;content:'NOW';display:inline-block;font-weight:700;padding:0 5px}.event-list .event{--event-background:#222;--event-foreground:#bbb;--event-title:#fff;background:var(--event-background);padding:15px}.event-list .event .event-summary{border-bottom:0;color:var(--event-title);margin:0;padding:0 0 0 35px;position:relative}.event-list .event .event-summary::before{animation:1s ease-in-out infinite alternate dot-flash;background:var(--event-title);left:0;margin-top:-6px;position:absolute;top:50%;border-radius:50%;content:' ';height:12px;width:12px}.event-list .event:nth-of-type(odd) .event-summary::before{animation-delay:.5s}.event-list .event:not(:last-child){margin-bottom:20px}.event-list .event .event-relative-time{color:var(--event-foreground);display:inline-block;font-size:12px;font-weight:400;padding-left:12px}.event-list .event .event-details{color:var(--event-foreground);display:block;line-height:18px;padding:6px 0 6px 35px}.event-list .event .event-details::before{color:var(--event-foreground);display:inline-block;margin-right:9px;width:14px;font-family:'Font Awesome 5 Free';font-weight:900}.event-list .event .event-details.event-location::before{content:'\f041'}.event-list .event .event-details.event-duration::before{content:'\f017'}.event-list .event .event-details.event-description::before{content:'\f024'}.event-list .event-past{--event-background:#f5f5f5;--event-foreground:#999;--event-title:#222}@-moz-keyframes dot-flash{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@-webkit-keyframes dot-flash{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@-o-keyframes dot-flash{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@keyframes dot-flash{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}ul.breadcrumb{font-size:.75em;list-style:none;margin:1em 0;padding:0 2em;text-align:center}ul.breadcrumb li{display:inline}ul.breadcrumb li:not(:first-child)::before{content:'/\00a0';font-weight:400;padding:.5em}ul.breadcrumb li:last-child{font-weight:700}.tag-cloud{text-align:center}.tag-cloud a{display:inline-block;margin:10px}.tag-cloud-0{border-bottom-color:#aaa;color:#aaa}.tag-cloud-1{border-bottom-color:#9a9a9a;color:#9a9a9a}.tag-cloud-2{border-bottom-color:#8b8b8b;color:#8b8b8b}.tag-cloud-3{border-bottom-color:#7c7c7c;color:#7c7c7c}.tag-cloud-4{border-bottom-color:#6c6c6c;color:#6c6c6c}.tag-cloud-5{border-bottom-color:#5d5d5d;color:#5d5d5d}.tag-cloud-6{border-bottom-color:#4e4e4e;color:#4e4e4e}.tag-cloud-7{border-bottom-color:#3e3e3e;color:#3e3e3e}.tag-cloud-8{border-bottom-color:#2f2f2f;color:#2f2f2f}.tag-cloud-9{border-bottom-color:#202020;color:#202020}.tag-cloud-10{border-bottom-color:#111;color:#111}@media (prefers-color-scheme:dark){.tag-cloud-0{border-bottom-color:#555;color:#555}.tag-cloud-1{border-bottom-color:#646464;color:#646464}.tag-cloud-2{border-bottom-color:#737373;color:#737373}.tag-cloud-3{border-bottom-color:#828282;color:#828282}.tag-cloud-4{border-bottom-color:#929292;color:#929292}.tag-cloud-5{border-bottom-color:#a1a1a1;color:#a1a1a1}.tag-cloud-6{border-bottom-color:#b0b0b0;color:#b0b0b0}.tag-cloud-7{border-bottom-color:silver;color:silver}.tag-cloud-8{border-bottom-color:#cfcfcf;color:#cfcfcf}.tag-cloud-9{border-bottom-color:#dedede;color:#dedede}.tag-cloud-10{border-bottom-color:#eee;color:#eee}}.gt-comments a,.gt-header a,.gt-popup a{border-bottom:0}.gt-container .gt-popup .gt-action.is--active::before{top:.7em}.search-active{overflow:hidden}.search-pop-overlay{background:rgba(0,0,0,0);display:flex;height:100%;left:0;position:fixed;top:0;transition:visibility .4s,background .4s;visibility:hidden;width:100%;z-index:40}.search-active .search-pop-overlay{background:rgba(0,0,0,.3);visibility:visible}.search-popup{background:var(--card-bg-color);border-radius:5px;height:80%;margin:auto;transform:scale(0);transition:transform .4s;width:700px}.search-active .search-popup{transform:scale(1)}@media (max-width:767px){.search-popup{border-radius:0;height:100%;width:100%}}.search-popup .popup-btn-close,.search-popup .search-icon{color:#999;font-size:18px;padding:0 10px}.search-popup .popup-btn-close{cursor:pointer}.search-popup .popup-btn-close:hover .fa{color:#222}.search-popup .search-header{background:#eee;border-top-left-radius:5px;border-top-right-radius:5px;display:flex;padding:5px}@media (prefers-color-scheme:dark){.search-popup .search-header{background:#666}}.search-popup input.search-input{background:0 0;border:0;outline:0;width:100%}.search-popup input.search-input::-webkit-search-cancel-button{display:none}.search-popup .search-result-container{height:calc(100% - 55px);overflow:auto;padding:5px 25px}.search-popup .search-result-container hr{margin:5px 0 10px}.search-popup .search-result-container hr:first-child{display:none}.search-popup .search-result-list{margin:0 5px;padding:0;width:100%}.search-popup a.search-result-title{font-weight:700}.search-popup p.search-result{border-bottom:1px dashed #ccc;padding:5px 0}.search-popup .search-input-container{flex-grow:1;padding:2px}.search-popup .no-result{display:flex}.search-popup .search-result-icon{color:#ccc;margin:auto}mark.search-keyword{background:0 0;border-bottom:1px dashed #ff2a2a;color:#ff2a2a;font-weight:700}.popular-posts-header{border-bottom:1px solid #eee;font-size:1.125em;margin-bottom:10px;margin-top:60px}.popular-posts{padding:0}.popular-posts .popular-posts-item{margin-left:2em}.popular-posts .popular-posts-item .popular-posts-title{font-size:.875em;font-weight:400;line-height:2.4;margin:0}.use-motion .animated{animation-fill-mode:none;visibility:inherit}.use-motion .sidebar .animated{animation-fill-mode:both}.main-inner{margin:0 auto;width:700px;padding-bottom:60px}@media (min-width:1200px){.main-inner{width:800px}}@media (min-width:1600px){.main-inner{width:900px}}.post-block:first-of-type{padding-top:70px}@media (max-width:767px){.main-inner{padding-left:20px;padding-right:20px}.footer-inner,.header-inner,.main-inner{width:auto}.post-block:first-of-type{padding-top:35px}}.custom-logo-image{background:#fff;margin:0 auto 10px;max-width:150px;padding:5px}.brand{background:var(--btn-default-bg)}.header-inner{padding-top:100px}.menu .menu-item a{border-bottom:1px solid transparent}.menu .menu-item a.menu-item-active,.menu .menu-item a:hover{background:0 0;border-bottom:1px solid var(--link-hover-color)}@media (max-width:767px){.header-inner{padding-top:50px}.site-nav{padding-top:30px}.main-menu{border-bottom:1px solid #ddd;border-top:1px solid #ddd}.menu{text-align:left}.menu .menu-item{margin:0 10px}.menu .menu-item a{padding:5px 10px}.menu .menu-item a.menu-item-active,.menu .menu-item a:hover{border-bottom:1px dotted #ddd}}@media (min-width:768px){.menu .menu-item .fa,.menu .menu-item .fab,.menu .menu-item .far,.menu .menu-item .fas{display:block;line-height:2;margin-right:0;width:100%}}.menu .menu-item .badge{background:#eee;color:#555;padding:1px 4px}.sub-menu{margin:10px 0}.sub-menu .menu-item{display:inline-block}@media (min-width:992px){.sidebar-active{padding-right:320px}}.sidebar{right:-320px;background:#222;bottom:0;position:fixed;top:0;transition:.2s ease-out;width:320px;z-index:20}.sidebar-active .sidebar{right:0}.sidebar a{border-bottom-color:#555;color:#999}.sidebar a:hover{border-bottom-color:#eee;color:#eee}.links-of-author:not(:first-child){margin-top:15px}.links-of-author a{border-bottom-color:#555;display:inline-block;margin-bottom:10px;margin-right:10px;vertical-align:middle}.links-of-author a::before{background:#e9754e;display:inline-block;margin-right:3px;transform:translateY(-2px);border-radius:50%;content:' ';height:4px;width:4px}.links-of-blogroll-item{padding:2px 10px}.links-of-blogroll-item a{box-sizing:border-box;display:inline-block;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}</style>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"markhe1222.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.12.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="1 硬盘存储知识计算机的主存基本都是随机访问存储器 (Random-Access Memory，RAM)，分为两类：静态随机访问存储器（SRAM）和动态随机访问存储器（DRAM）。SRAM 比 DRAM 快，但是也贵的多，一般作为 CPU 的高速缓存，DRAM 通常作为内存。这类存储器他们的结构和存储原理比较复杂，基本是使用电信号来保存信息的，不存在机械操作，所以访问速度非常快，具体的访问原理可以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="B+Tree 与存储索引">
+<meta property="og:url" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/index.html">
+<meta property="og:site_name" content="马根花的小菜园">
+<meta property="og:description" content="1 硬盘存储知识计算机的主存基本都是随机访问存储器 (Random-Access Memory，RAM)，分为两类：静态随机访问存储器（SRAM）和动态随机访问存储器（DRAM）。SRAM 比 DRAM 快，但是也贵的多，一般作为 CPU 的高速缓存，DRAM 通常作为内存。这类存储器他们的结构和存储原理比较复杂，基本是使用电信号来保存信息的，不存在机械操作，所以访问速度非常快，具体的访问原理可以">
+<meta property="og:locale">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220814165957102.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220814171109054.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820213724065.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820215539180.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820222046768.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820222954418.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820224127106.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820225800977.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820232047245.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820232123482.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820232356586.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820232356586.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220821212846585.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220821213419714.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220821214247494.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220821220406095.png">
+<meta property="article:published_time" content="2022-08-14T08:26:32.000Z">
+<meta property="article:modified_time" content="2023-10-24T15:16:33.386Z">
+<meta property="article:author" content="MarkHe1222">
+<meta property="article:tag" content="分布式">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="存储">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220814165957102.png">
+
+
+<link rel="canonical" href="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-Hans","comments":true,"permalink":"https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/","path":"2022/08/14/B-Tree与存储索引/","title":"B+Tree 与存储索引"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>B+Tree 与存储索引 | 马根花的小菜园</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">马根花的小菜园</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">时光匆匆独白</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E7%A1%AC%E7%9B%98%E5%AD%98%E5%82%A8%E7%9F%A5%E8%AF%86"><span class="nav-text">1 硬盘存储知识</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-BTree%E7%AE%80%E4%BB%8B"><span class="nav-text">2 BTree 简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E6%80%A7"><span class="nav-text">特性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-B-Tree"><span class="nav-text">3 B+Tree</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-%E7%89%B9%E6%80%A7"><span class="nav-text">3.1 特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-B-Tree%E7%9A%84%E5%88%9B%E5%BB%BA%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%8F%92%E5%85%A5"><span class="nav-text">3.2 B+Tree 的创建与数据插入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-B-Tree%E7%9A%84%E6%95%B0%E6%8D%AE%E5%88%A0%E9%99%A4"><span class="nav-text">3.3 B+Tree 的数据删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4-Java%E5%AE%9E%E7%8E%B0"><span class="nav-text">3.4 Java 实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-MySql%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9B-Tree"><span class="nav-text">3.5 MySql 为什么选择 B+Tree</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6-B-Tree%E4%B8%8ELSM-Tree%E5%AF%B9%E6%AF%94"><span class="nav-text">3.6 B+Tree 与 LSM-Tree 对比</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E6%80%BB%E7%BB%93"><span class="nav-text">4 总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%95%E7%94%A8"><span class="nav-text">引用</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="MarkHe1222"
+      src="/images/tatan.png">
+  <p class="site-author-name" itemprop="name">MarkHe1222</p>
+  <div class="site-description" itemprop="description">Stay hungry, Stay foolish!</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/MarkHe1222" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;MarkHe1222" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:mark.he.1314@gmail.com" title="E-Mail → mailto:mark.he.1314@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+    <div class="links-of-blogroll motion-element links-of-blogroll-block">
+      <div class="links-of-blogroll-title">
+        <!-- modify icon to fire by szw -->
+        <i class="fa fa-history fa-" aria-hidden="true"></i>
+        近期文章
+      </div>
+      <ul class="links-of-blogroll-list">
+        
+        
+          <li>
+            <a href="/2023/03/26/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/" title="桥接模式" target="_blank">桥接模式</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/01/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/" title="适配器模式" target="_blank">适配器模式</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/23/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%EF%BC%9ACAP%E7%90%86%E8%AE%BA/" title="分布式系统：CAP 理论" target="_blank">分布式系统：CAP 理论</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/19/%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F/" title="外观模式" target="_blank">外观模式</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/16/HDFS%E7%B3%BB%E5%88%97-HDFS%E6%9E%B6%E6%9E%84%E8%AF%A6%E8%A7%A3/" title="HDFS 系列: HDFS 架构详解" target="_blank">HDFS 系列: HDFS 架构详解</a>
+          </li>
+        
+      </ul>
+    </div>
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+      <div class="sidebar-inner">
+        
+     </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://markhe1222.github.io/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/tatan.png">
+      <meta itemprop="name" content="MarkHe1222">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="马根花的小菜园">
+      <meta itemprop="description" content="Stay hungry, Stay foolish!">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="B+Tree 与存储索引 | 马根花的小菜园">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          B+Tree 与存储索引
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-08-14 16:26:32" itemprop="dateCreated datePublished" datetime="2022-08-14T16:26:32+08:00">2022-08-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-10-24 23:16:33" itemprop="dateModified" datetime="2023-10-24T23:16:33+08:00">2023-10-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="1-硬盘存储知识"><a href="#1-硬盘存储知识" class="headerlink" title="1 硬盘存储知识"></a>1 硬盘存储知识</h1><p>计算机的主存基本都是随机访问存储器 <code>(Random-Access Memory，RAM)</code>，分为两类：静态随机访问存储器<code>（SRAM）</code>和动态随机访问存储器<code>（DRAM）</code>。<code>SRAM</code> 比 <code>DRAM</code> 快，但是也贵的多，一般作为 <code>CPU</code> 的高速缓存，<code>DRAM</code> 通常作为内存。这类存储器他们的结构和存储原理比较复杂，基本是使用电信号来保存信息的，不存在机械操作，所以访问速度非常快，具体的访问原理可以查看 <code>CSAPP</code>，另外，他们是易失的，即如果断电，保存 <code>DRAM</code> 和 <code>SRAM</code> 保存的信息就会丢失。</p>
+<span id="more"></span>
+<!-- markdownlint-disable MD041 MD002--> 
+
+<p>内存的大小限制等原因，若要操作的数据集非常大，内存已经无法完全加载，则需要外部存储磁盘来进行数据存储。磁盘能够保存大量的数据，从 GB 一直到 TB 级，但是磁盘的读取速度比较慢，因为涉及到机械操作，读取速度为毫秒级，从 <code>DRAM</code> 读速度比从磁盘度快 <code>10万倍</code>，从 <code>SRAM</code> 读速度比从磁盘读快 <code>100万倍</code>。磁盘的结构：</p>
+<p><img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220814165957102.png" alt="image-20220814165957102"></p>
+<p>如上图，磁盘由盘片构成，每个盘片有两面，又称为盘面 <code>(Surface)</code>，这些盘面覆盖有磁性材料。盘片中央有一个可以旋转的主轴 <code>(spindle)</code>，他使得盘片以固定的旋转速率旋转，通常是 <code>5400</code> 转每分钟 <code>(Revolution Per Minute,RPM)</code> 或者是 <code>7200RPM</code>。磁盘包含多个这样的盘片并封装在一个密封的容器内。上图左，展示了一个典型的磁盘表面结构。每个表面是由一组成为磁道 <code>(track)</code> 的同心圆组成的，每个磁道被划分为了一组扇区 <code>(sector)</code>。每个扇区包含相等数量的数据位，通常是（512）子节。扇区之间由一些间隔 <code>(gap)</code> 隔开，不存储数据。</p>
+<p><img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220814171109054.png" alt="image-20220814171109054"></p>
+<p>如上图，磁盘用读 / 写头来读写存储在磁性表面的位，而读写头连接到一个传动臂的一端。通过沿着半径轴前后移动传动臂，驱动器可以将读写头定位到任何磁道上，这称之为<strong>寻道操作</strong>。一旦定位到磁道后，盘片转动，磁道上的每个位经过磁头时，读写磁头就可以感知到位的值，也可以修改值。对磁盘的访问时间分为 <strong>寻道时间</strong>，<strong>旋转时间</strong>，以及<strong>传送时间</strong>。</p>
+<p>由于存储介质的特性，磁盘本身存取就比主存慢很多，再加上机械运动耗时，所以为了提高效率，应尽量减少磁盘 I/O，即减少读写操作。为了达到这个目的，磁盘往往不是严格按需读取，而是每次都会预读，即使只需要一个字节，磁盘也会从这个位置开始，顺序向后读取一定长度的数据放入内存。这样做的理论依据是计算机科学中著名的局部性原理：<strong>当一个数据被用到时，其附近的数据也通常会马上被使用。</strong> <strong>程序运行期间所需要的数据通常比较集中。</strong></p>
+<p>由于磁盘顺序读取的效率很高（不需要寻道时间，只需很少的旋转时间），因此对于具有局部性的程序来说，预读可以提高 I/O 效率。</p>
+<p>预读的长度一般为页<code>（page）</code>的整倍数。<strong>页是计算机管理存储器的逻辑块</strong>，硬件及操作系统往往将主存和磁盘存储区分割为连续的大小相等的块，每个存储块称为一页（在许多操作系统中，页得大小通常为 4k），主存和磁盘以页为单位交换数据。当程序要读取的数据不在主存中时，会触发一个缺页异常，此时系统会向磁盘发出读盘信号，磁盘会找到数据的起始位置并向后连续读取一页或几页载入内存中，然后异常返回，程序继续运行。</p>
+<p>文件系统及数据库系统的设计者利用了磁盘预读原理，将一个 BTree/B+Tree 节点的大小设为等于一个页，这样每个节点只需要一次 I/O 就可以完全载入。为了达到这个目的，在实际实现中还需要使用如下技巧：</p>
+<ul>
+<li>每次新建一个节点的同时，直接申请一个页的空间 (512 或者 1024)，这样就保证一个节点物理上也存储在一个页里，加之计算机存储分配都是按页对齐的，就实现了一个 node 只需一次 I/O。</li>
+</ul>
+<h1 id="2-BTree简介"><a href="#2-BTree简介" class="headerlink" title="2 BTree简介"></a>2 BTree 简介</h1><p>BTree（平衡多路查找树）是为磁盘等外存储设备设计的一种平衡查找树。</p>
+<p>按照上节内容介绍的，系统从磁盘读取数据到内存时是以磁盘块（block）为基本单位的，位于同一个磁盘块中的数据会被一次性读取出来，而不是需要什么取什么。</p>
+<p>KV 存储或者数据库中，也是以页为基础的基本单位进行磁盘管理（存储中的单页大小是系统页的倍数）。</p>
+<p>BTree 结构的数据可以让系统高效的找到数据所在的磁盘块。为了描述 BTree，首先定义一条记录为一个二元组 [key, data] ，key 为记录的键值，对应表中的主键值，data 为一行记录中除主键外的数据。对于不同的记录，key 值互不相同。</p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><p>一棵 m 阶的 B-Tree 有如下特性：</p>
+<ol>
+<li>每个节点最多有 m 个孩子。</li>
+<li>除了根节点和叶子节点外，其它每个节点至少有 Ceil (m/2)（向上取整）个孩子。</li>
+<li>若根节点不是叶子节点，则至少有 2 个孩子。</li>
+<li>所有叶子节点都在同一层，且不包含其它关键字信息。</li>
+<li>每个非终端节点包含 n 个关键字信息（P0,P1,…Pn, k1,…kn）</li>
+<li>关键字的个数 n 满足：ceil (m/2)-1 &lt;= n &lt;= m-1</li>
+<li>ki (i=1,…n) 为关键字，且关键字升序排序。</li>
+<li>Pi (i=1,…n) 为指向子树根节点的指针。P (i-1) 指向的子树的所有节点关键字均小于 <code>ki</code>，但都大于 k (i-1)。</li>
+</ol>
+<p>BTree 中的每个节点根据实际情况可以包含大量的关键字信息和分支，如下图所示为一个 3 阶的 BTree：</p>
+<p><img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820213724065.png" alt="image-20220820213724065"></p>
+<p>每个节点占用一个盘块的磁盘空间，一个节点上有两个升序排序的关键字和三个指向子树根节点的指针，指针存储的是子节点所在磁盘块的地址。两个关键词划分成的三个范围域对应三个指针指向的子树的数据的范围域。以根节点为例，关键字为 17 和 35，P1 指针指向的子树的数据范围为小于 17，P2 指针指向的子树的数据范围为 <code>[17, 35)</code>，P3 指针指向的子树的数据范围为大于 35。</p>
+<p>模拟查找<code>关键字29</code> 的过程：</p>
+<ol>
+<li>根据根节点找到<code>磁盘块1</code>，读入内存。<strong>【磁盘 I/O 操作第 1 次】</strong></li>
+<li>比较<code>关键字29</code> 在区间 <code>[17, 35)</code>，找到<code>磁盘块1</code> 的指针 <code>P2</code>。</li>
+<li>根据 <code>P2</code> 指针找到<code>磁盘块3</code>，读入内存。<strong>【磁盘 I/O 操作第 2 次】</strong></li>
+<li>比较<code>关键字29</code> 在区间 <code>[26, 30)</code>，找到<code>磁盘块3</code> 的指针 <code>P2</code>。</li>
+<li>根据 <code>P2</code> 指针找到<code>磁盘块8</code>，读入内存。<strong>【磁盘 I/O 操作第 3 次】</strong></li>
+<li>在<code>磁盘块8</code> 中的关键字列表中找到<code>关键字29</code>。</li>
+</ol>
+<p>分析上面过程，发现需要 <code>3次</code>磁盘 I/O 操作，和 <code>3次</code>内存查找操作。由于内存中的关键字是一个有序表结构，可以利用二分法查找提高效率。而 **<code>3次</code>磁盘 I/O 操作是影响整个 BTree 查找效率的决定因素 **。B-Tree 相对于 AVLTree 缩减了节点个数，使每次磁盘 I/O 取到内存的数据都发挥了作用，从而提高了查询效率。</p>
+<h1 id="3-B-Tree"><a href="#3-B-Tree" class="headerlink" title="3 B+Tree"></a>3 B+Tree</h1><p>从上一节中的 BTree 结构图中可以看到每个节点中不仅包含数据的 key 值，还有 data 值。而每一个页的存储空间是有限的，如果 data 数据较大时将会导致每个节点（即一个页）能存储的 key 的数量很小，当存储的数据量很大时同样会导致 BTree 的深度较大，增大查询时的磁盘 I/O 次数，进而影响查询效率。</p>
+<p>B+Tree 是在 BTree 基础上的一种优化，使其更适合实现外存储索引结构。在 B+Tree 中，所有数据记录节点都是按照键值大小顺序存放在同一层的叶子节点上，而非叶子节点上只存储 key 值索引信息，这样可以大大加大每个节点存储的 key 值数量，降低 B+Tree 的高度。减少磁盘的 I/O，提高查找效率。</p>
+<h2 id="3-1-特性"><a href="#3-1-特性" class="headerlink" title="3.1 特性"></a>3.1 特性</h2><p>B+Tree 与 BTree 不同的几点：</p>
+<ol>
+<li>非叶子节点只存储键值信息。</li>
+<li>所有叶子节点之间都有一个链指针。</li>
+<li>数据记录都存放在叶子节点中。</li>
+</ol>
+<p>将上一节中的 B-Tree 优化，由于 B+Tree 的非叶子节点只存储键值信息，假设每个磁盘块能存储 4 个键值及指针信息，则变成 B+Tree 后其结构如下图所示：</p>
+<p><img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820215539180.png" alt="image-20220820215539180"></p>
+<p>通常在 B+Tree 上有两个头指针，一个指向根节点，另一个指向关键字最小的叶子节点，而且所有叶子节点（即数据节点）之间是一种链式环结构。因此可以对 B+Tree 进行两种查找运算：</p>
+<ol>
+<li>一种是对于主键的范围查找和分页查找；</li>
+<li>一种是从根节点开始，进行随机查找；</li>
+</ol>
+<h2 id="3-2-B-Tree的创建与数据插入"><a href="#3-2-B-Tree的创建与数据插入" class="headerlink" title="3.2 B+Tree的创建与数据插入"></a>3.2 B+Tree 的创建与数据插入</h2><p>假设需要创建 3 阶 B+Tree：</p>
+<blockquote>
+<p>Max Key         = M - 1 = 3<br>Min Key          = (M / 2) - 1 = 1<br>Max Children = 4<br>Min Children  = M / 2 = 2</p>
+</blockquote>
+<p>创建 B+Tree, 依次插入值：<code>1, 4 ,7, 10, 17, 21, 31, 25, 19, 20, 22, 42</code></p>
+<p>首先定义一颗空树，然后依次新增，新增流程如下：</p>
+<p>依次插入 1、4、7、10</p>
+<img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820222046768.png" alt="image-20220820222046768" style="zoom: 50%;">
+
+<p>此时结点关键字已经达到 M（4）个的要求，若继续插入 17，则超过了 <code>Max Children = 4</code> 的规定，此时需要对节点进行分裂，分裂成树形结构，数据保存在 LeafNode 中，索引保存在 IndexNode 中。LeafNode 之间形成单向链表。</p>
+<img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820222954418.png" alt="image-20220820222954418" style="zoom: 50%;">
+
+<p>继续插入 21、31，新增 31 时，右节点则超过最大阶数 4，则需要继续分裂成两个 LeafNode，同时索引也需要更新。</p>
+<img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820224127106.png" alt="image-20220820224127106" style="zoom: 50%;">
+
+<p>继续新增 25、19</p>
+<img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820225800977.png" alt="image-20220820225800977" style="zoom:50%;">
+
+<p>继续新增 20、22，需要注意，此时不经超过了 <code>Max Children = 4</code> 的规定，Root 中，也超过了 <code>Max Key = M - 1 = 3</code> 的规定需要对 Root 进行分裂，分裂成两个 IndexNode。前面提到过，在 B+Tree 中除了 LeafNode，其他的 Node 存储的都是索引，Root 也是特殊的 IndexNode，所以不应该存在重复的索引，没有意义，因此在 LeafNode 中的 20 的索引，应该删除，具体步骤如下：</p>
+<img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820232047245.png" alt="image-20220820232047245" style="zoom:50%;">
+
+<img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820232123482.png" alt="image-20220820232123482" style="zoom:50%;">
+
+<p>继续新增 42，最终 B+Tree 结构如下：</p>
+<img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820232356586.png" alt="image-20220820232356586" style="zoom: 50%;">
+
+<h2 id="3-3-B-Tree的数据删除"><a href="#3-3-B-Tree的数据删除" class="headerlink" title="3.3 B+Tree的数据删除"></a>3.3 B+Tree 的数据删除</h2><p>本节介绍 B+Tree 的删除流程，复用上节的例子，对以下 B+Tree 依次删除：<code>31、42、7、10、17</code></p>
+<img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220820232356586.png" alt="image-20220820232356586" style="zoom: 50%;">
+
+<p>删除 31 的过程中，即没有打破索引，也没有导致结点关键字少于最小关键字个数，所以整棵树并没有大的改动。</p>
+<img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220821212846585.png" alt="image-20220821212846585" style="zoom: 50%;">
+
+<p>我们删除 42 的时候，结点最关键字小于最小关键字个数。此时就需要借结点或者合并结点。针对删除 42，我们会发现，他的左兄弟结点关键字个数 3 大于最小关键字个数 2，所以可以借用。</p>
+<p>借用规则：<strong>借用左兄弟最大关键字或者右兄弟最小关键字，如果是借用左兄弟，则更新左兄弟对应父结点的索引值 (因为最大关键字被借走)， 如果借用右兄弟则更新当前结点对应父结点的索引值 (因为借过来的肯定比当前索引值大)。</strong></p>
+<img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220821213419714.png" alt="image-20220821213419714" style="zoom:50%;">
+
+<p>继续删除 7，LeafNode 关键字个数小于最小值，且最有兄弟结点的关键字个数无法外借 (因为已经是最少关键字 2)，此时只能进行合并。</p>
+<p>合并规则：<strong>如果合并之后索引结点孩子不足 2，则移除索引结点，合并结点充当新的索引结点，树的高度 - 1，如果合并之后，索引结点孩子大于等于 2， 则将被合并结点对应父结点的索引值移除。</strong></p>
+<img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220821214247494.png" alt="image-20220821214247494" style="zoom:50%;">
+
+<p>最后删除 10、17，删除 17 时，也触发合并流程，且更新索引时，索引节点也需要合并，索引结点的合并后，树的高度 - 1，并且更新根结点。</p>
+<img src="/2022/08/14/B-Tree%E4%B8%8E%E5%AD%98%E5%82%A8%E7%B4%A2%E5%BC%95/image-20220821220406095.png" alt="image-20220821220406095" style="zoom:50%;">
+
+<h2 id="3-4-Java实现"><a href="#3-4-Java实现" class="headerlink" title="3.4 Java实现"></a>3.4 Java 实现</h2><p>参见 git: <a target="_blank" rel="noopener" href="https://github.com/MarkHe1222/BPlusTree">https://github.com/MarkHe1222/BPlusTree</a></p>
+<h2 id="3-5-MySql为什么选择B-Tree"><a href="#3-5-MySql为什么选择B-Tree" class="headerlink" title="3.5 MySql为什么选择B+Tree"></a>3.5 MySql 为什么选择 B+Tree</h2><ol>
+<li><p>B+Tree 是 B TREE 的变种，B TREE 能解决的问题，B+TREE 也能够解决（降低树的⾼度，增⼤节点存储数据量）</p>
+</li>
+<li><p>B+Tree 扫库和扫表能⼒更强。如果我们要根据索引去进⾏数据表的扫描，对 BTree 进⾏扫描，需要把整棵树遍历⼀遍，⽽ B+Tree 只需要遍历他的所有叶⼦节点即可（叶⼦节点之间有引⽤）</p>
+</li>
+<li><p>B+Tree 磁盘读写能⼒更强。他的根结点和索引结点不保存数据区，所以根结点和索引结点同样⼤⼩的情况下，保存的关键字要⽐ BTree 要多。⽽叶⼦结点不保存索引结点引⽤，能⽤于保存更多的关键字和数据。所以，B+Tree 读写⼀次磁盘加载的关键字⽐ BTree 更多。</p>
+</li>
+<li><p>B+Tree 排序能⼒更强。B+Tree 天然具有排序功能。</p>
+</li>
+<li><p>B+Tree 查询性能稳定。B+Tree 数据只保存在叶⼦节点，每次查询数据，查询 IO 次数⼀定是稳定的。但是在 BTree 如果根节点命中直接返回，确实效率更⾼。</p>
+</li>
+</ol>
+<h2 id="3-6-B-Tree与LSM-Tree对比"><a href="#3-6-B-Tree与LSM-Tree对比" class="headerlink" title="3.6 B+Tree与LSM-Tree对比"></a>3.6 B+Tree 与 LSM-Tree 对比</h2><table>
+<thead>
+<tr>
+<th>存储引擎</th>
+<th> B+Tree</th>
+<th align="left">LSM-Tree</th>
+<th> 备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>优势</td>
+<td>读取更快</td>
+<td align="left">写入更快</td>
+<td></td>
+</tr>
+<tr>
+<td>写放大</td>
+<td> 1. 数据和 WAL 2. 更改数据时多次覆盖整个 Page</td>
+<td align="left">1. 数据和 WAL 2. Compaction</td>
+<td>SSD 不能过多擦除。因此 SSD 内部的固件中也多用日志结构来减少随机写。</td>
+</tr>
+<tr>
+<td>写吞吐</td>
+<td>相对较低，大量随机写</td>
+<td align="left">相对较高：1. 较低的写放大（取决于数据和配置）2. 顺序写入；3. 更为紧凑</td>
+<td></td>
+</tr>
+<tr>
+<td>压缩率</td>
+<td>存在较多内部碎片</td>
+<td align="left"> 1. 更加紧凑，没有碎片；2. 压缩率更大（共享前缀）</td>
+<td>但 Compaction 不及时会造成 LSM-Tree 存在很多垃圾</td>
+</tr>
+<tr>
+<td>后台流量</td>
+<td>更稳定且可预测，不会受后台 Compaction 突发流量影响</td>
+<td align="left"> 1. 写吞吐过高，Compaction 跟不上，会进一步加重读放大； 2. 由于外存总带宽有限，Compaction 会影响读写吞吐；3. 随着数据越来越多，Compaction 对正常写影响越来越大。</td>
+<td>RocksDB 写入太过快会引起 write stall，即限制写入，以期尽快 Compaction 将数据下沉。</td>
+</tr>
+<tr>
+<td>存储放大</td>
+<td>有些 Page 没有用满</td>
+<td align="left">同一个 Key 存多遍</td>
+<td></td>
+</tr>
+<tr>
+<td>并发控制</td>
+<td> 1. 同一个 Key 只存在一个地方；2. 树结构容易加范围锁</td>
+<td align="left">同一个 Key 会存多遍，一般使用 MVCC 进行控制</td>
+<td> B+Tree（例如 innodb）在使用中日志记录相同键的多个版本，能够提供更强大的事务语义</td>
+</tr>
+</tbody></table>
+<h1 id="4-总结"><a href="#4-总结" class="headerlink" title="4 总结"></a>4 总结</h1><p> 一般来说，存储索引本身也很大，不可能全部存储在内存中，因此索引往往以索引文件的形式存储的磁盘上。这样的话，索引查找过程中就要产生磁盘 I/O 消耗，相对于内存存取，I/O 存取的消耗要高几个数量级，所以评价一个数据结构作为索引的优劣最重要的指标就是在查找过程中磁盘 I/O 操作次数的渐进复杂度。换句话说，索引的结构组织要尽量减少查找过程中磁盘 I/O 的存取次数。</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiaoxi/p/6894610.html">B+Tree 原理及 mysql 的索引分析</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/vincently/p/4526560.html">【经典数据结构】B 树与 B + 树</a>]</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.talkwithtrend.com/Article/252785">DB 存储引擎：B-Trees 存储引擎详细分解</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://tech.meituan.com/2017/05/19/about-desk-io.html">磁盘 I/O 那些事</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developer.aliyun.com/article/983989">BTree 与 B+Tree 图文详解</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_33171970/article/details/88395278?spm=1001.2101.3001.6650.11&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-11-88395278-blog-78377026.t0_eslanding_v1&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-11-88395278-blog-78377026.t0_eslanding_v1&amp;utm_relevant_index=14">B + 树的 Java 实现 (B+ Tree)</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.javazhiyin.com/70714.html">B+Tree 实现图解</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=DqcZLulVJ0M">B+ tree creation example</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=pGOdeCpuwpI&amp;t=1s">B+ tree deletion| with example</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV16N411X7y8/?spm_id_from=333.788.recommend_more_video.3&amp;vd_source=3aa61749be95c9972786d32be208b4e0">基于 B+ Tree 的简单 KV 数据库</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://blog.codinglabs.org/articles/theory-of-mysql-index.html">MySQL 索引背后的数据结构及算法原理</a></p>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>您的支持将鼓励我继续创作！买包辣条</div>
+  <button>
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="MarkHe1222 WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="/images/alipay.png" alt="MarkHe1222 Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" rel="tag"><i class="fa fa-tag"></i> 分布式</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i> 算法</a>
+              <a href="/tags/%E5%AD%98%E5%82%A8/" rel="tag"><i class="fa fa-tag"></i> 存储</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/08/13/%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%AF%A6%E8%A7%A3/" rel="prev" title="算法的时间与空间复杂度详解">
+                  <i class="fa fa-chevron-left"></i> 算法的时间与空间复杂度详解
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/08/22/BigTable-A-Distributed-Storage-System-for-Structured-Data%E7%BF%BB%E8%AF%91-%E7%90%86%E8%A7%A3/" rel="next" title="BigTable: A Distributed Storage System for Structured Data 翻译 & 理解">
+                  BigTable: A Distributed Storage System for Structured Data 翻译 & 理解 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.7.2/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"MarkHe1222","repo":"BlogComments","client_id":"adad63d4df6f6b8b51e7","client_secret":"8c4f0e142285d2062e5cac0815a008b38be77862","admin_user":"MarkHe1222","distraction_free_mode":false,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.7.2/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"6eed22702db01a4c28739171122c1630"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>

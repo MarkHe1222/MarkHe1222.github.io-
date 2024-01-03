@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<style>:root{--body-bg-color:#fff;--content-bg-color:#fff;--card-bg-color:#f5f5f5;--text-color:#555;--blockquote-color:#666;--link-color:#555;--link-hover-color:#222;--brand-color:#fff;--brand-hover-color:#fff;--table-row-odd-bg-color:#f9f9f9;--table-row-hover-bg-color:#f5f5f5;--menu-item-bg-color:#f5f5f5;--theme-color:#222;--btn-default-bg:#222;--btn-default-color:#fff;--btn-default-border-color:#222;--btn-default-hover-bg:#fff;--btn-default-hover-color:#222;--btn-default-hover-border-color:#222;--highlight-background:#f3f3f3;--highlight-foreground:#444;--highlight-gutter-background:#e1e1e1;--highlight-gutter-foreground:#555;color-scheme:light}@media (prefers-color-scheme:dark){:root{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--theme-color:#222;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#1c1b1b;--highlight-foreground:#fff;--highlight-gutter-background:#323131;--highlight-gutter-foreground:#e8e8e8;color-scheme:dark}img{opacity:.75}img:hover{opacity:.9}iframe{color-scheme:light}}html{line-height:1.15;-webkit-text-size-adjust:100%}details,main{display:block}pre{font-size:1em;overflow:auto;padding:10px;position:relative}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}.table-container,textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}summary{display:list-item}[hidden],template{display:none}::selection{background:#262a30;color:#eee}body,html{height:100%}body{margin:0;background:var(--body-bg-color);box-sizing:border-box;color:var(--text-color);font-family:Lato,'PingFang SC','Microsoft YaHei',sans-serif;font-size:1em;line-height:2;min-height:100%;position:relative;transition:padding .2s ease-in-out}h1,h2,h3,h4,h5,h6{font-family:Lato,'PingFang SC','Microsoft YaHei',sans-serif;font-weight:700;line-height:1.5;margin:30px 0 15px}h1{font-size:1.5em}h2{font-size:1.375em}h3{font-size:1.25em}h4{font-size:1.125em}h5{font-size:1em}h6{font-size:.875em}p{margin:0 0 20px}a{background:0 0;border-bottom:1px solid #999;color:var(--link-color);cursor:pointer;outline:0;text-decoration:none;overflow-wrap:break-word}a:hover{border-bottom-color:var(--link-hover-color);color:var(--link-hover-color)}embed,iframe,img,video{display:block;margin-left:auto;margin-right:auto;max-width:100%}hr{box-sizing:content-box;overflow:visible;background-image:repeating-linear-gradient(-45deg,#ddd,#ddd 4px,transparent 4px,transparent 8px);border:0;height:3px;margin:40px 0}blockquote{border-left:4px solid #ddd;color:var(--blockquote-color);margin:0;padding:0 15px}blockquote cite::before{content:'-';padding:0 5px}dt{font-weight:700}dd{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0;font-size:.875em;margin:0 0 20px;width:100%}tbody tr:nth-of-type(odd){background:var(--table-row-odd-bg-color)}tbody tr:hover{background:var(--table-row-hover-bg-color)}caption,td,th{padding:8px}td,th{border:1px solid #ddd;border-bottom:3px solid #ddd}th{font-weight:700;padding-bottom:10px}td{border-bottom-width:1px}.btn{background:var(--btn-default-bg);border:2px solid var(--btn-default-border-color);border-radius:0;color:var(--btn-default-color);display:inline-block;font-size:.875em;line-height:2;padding:0 20px;transition:background-color .2s ease-in-out}.btn:hover{background:var(--btn-default-hover-bg);border-color:var(--btn-default-hover-border-color);color:var(--btn-default-hover-color)}.btn+.btn{margin:0 0 8px 8px}.btn .fa-fw{text-align:left;width:1.285714285714286em}.toggle{line-height:0}.toggle .toggle-line{background:#fff;display:block;height:2px;left:0;position:relative;top:0;transition:.4s;width:100%}.toggle .toggle-line:not(:first-child){margin-top:3px}.toggle.toggle-arrow .toggle-line:first-child{top:2px;transform:rotate(-45deg);width:50%}.toggle.toggle-arrow .toggle-line:last-child{top:-2px;transform:rotate(45deg);width:50%}.toggle.toggle-close .toggle-line:nth-child(2){opacity:0}.toggle.toggle-close .toggle-line:first-child{top:5px;transform:rotate(-45deg)}.toggle.toggle-close .toggle-line:last-child{top:-5px;transform:rotate(45deg)}/*!
+  Theme: Default
+  Description: Original highlight.js style
+  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+  Maintainer: @highlightjs/core-team
+  Website: https://highlightjs.org/
+  License: see project LICENSE
+  Touched: 2021
+*/pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#f3f3f3;color:#444}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}@media (prefers-color-scheme:dark){pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
+  Theme: StackOverflow Dark
+  Description: Dark theme as used on stackoverflow.com
+  Author: stackoverflow.com
+  Maintainer: @Hirse
+  Website: https://github.com/StackExchange/Stacks
+  License: MIT
+  Updated: 2021-05-15
+
+  Updated for @stackoverflow/stacks v0.64.0
+  Code Blocks: /blob/v0.64.0/lib/css/components/_stacks-code-blocks.less
+  Colors: /blob/v0.64.0/lib/css/exports/_stacks-constants-colors.less
+*/.hljs{color:#fff;background:#1c1b1b}.hljs-subst{color:#fff}.hljs-comment{color:#999}.hljs-attr,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-section,.hljs-selector-tag{color:#88aece}.hljs-attribute{color:#c59bc1}.hljs-name,.hljs-number,.hljs-quote,.hljs-selector-id,.hljs-template-tag,.hljs-type{color:#f08d49}.hljs-selector-class{color:#88aece}.hljs-link,.hljs-regexp,.hljs-selector-attr,.hljs-string,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#b5bd68}.hljs-meta,.hljs-selector-pseudo{color:#88aece}.hljs-built_in,.hljs-literal,.hljs-title{color:#f08d49}.hljs-bullet,.hljs-code{color:#ccc}.hljs-meta .hljs-string{color:#b5bd68}.hljs-deletion{color:#de7176}.hljs-addition{color:#76c490}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}}.highlight:hover .copy-btn,pre:hover .copy-btn{opacity:1}figure.highlight .table-container{position:relative;border-radius:0 0 5px 5px}.copy-btn{color:#333;cursor:pointer;line-height:1.6;opacity:0;padding:2px 6px;position:absolute;transition:opacity .2s ease-in-out;color:var(--highlight-foreground);font-size:14px;right:0;top:2px}figure.highlight{border-radius:5px;box-shadow:0 10px 30px 0 rgba(0,0,0,.4);padding-top:30px;position:relative}figure.highlight::before{background:#fc625d;box-shadow:20px 0 #fdbc40,40px 0 #35cd4b;left:12px;margin-top:-20px;position:absolute;border-radius:50%;content:' ';height:12px;width:12px}code,figure.highlight,kbd,pre{background:var(--highlight-background);color:var(--highlight-foreground)}figure.highlight,pre{line-height:1.6;margin:0 auto 20px}figure.highlight figcaption,pre .caption,pre figcaption{background:var(--highlight-gutter-background);color:var(--highlight-foreground);display:flow-root;font-size:.875em;line-height:1.2;padding:.5em}figure.highlight figcaption a,pre .caption a,pre figcaption a{color:var(--highlight-foreground);float:right}figure.highlight figcaption a:hover,pre .caption a:hover,pre figcaption a:hover{border-bottom-color:var(--highlight-foreground)}code,pre{font-family:consolas,Menlo,monospace,'PingFang SC','Microsoft YaHei'}code{border-radius:3px;font-size:.875em;padding:2px 4px;overflow-wrap:break-word}kbd{border:2px solid #ccc;border-radius:.2em;box-shadow:.1em .1em .2em rgba(0,0,0,.1);font-family:inherit;padding:.1em .3em;white-space:nowrap}figure.highlight pre{border:0;margin:0;padding:10px 0}figure.highlight table{border:0;margin:0;width:auto}figure.highlight td{border:0;padding:0}figure.highlight .gutter{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;user-select:none}figure.highlight .gutter pre{background:var(--highlight-gutter-background);color:var(--highlight-gutter-foreground);padding-left:10px;padding-right:10px;text-align:right}figure.highlight .code pre{padding-left:10px;width:100%}figure.highlight .marked{background:rgba(0,0,0,.3)}pre .caption,pre figcaption{margin-bottom:10px}.gist table{width:auto}.gist table td{border:0}pre code{background:0 0;padding:0;text-shadow:none}.blockquote-center{border-left:0;margin:40px 0;padding:0;position:relative;text-align:center}.blockquote-center::after,.blockquote-center::before{left:0;line-height:1;opacity:.6;position:absolute;width:100%}.blockquote-center::before{border-top:1px solid #ccc;text-align:left;top:-20px;content:'\f10d';font-family:'Font Awesome 5 Free';font-weight:900}.blockquote-center::after{border-bottom:1px solid #ccc;bottom:-20px;text-align:right;content:'\f10e';font-family:'Font Awesome 5 Free';font-weight:900}.blockquote-center div,.blockquote-center p{text-align:center}.group-picture{margin-bottom:20px}.group-picture .group-picture-row{display:flex;gap:3px;margin-bottom:3px}.group-picture .group-picture-column{flex:1}.group-picture .group-picture-column img{height:100%;margin:0;object-fit:cover;width:100%}.post-body .label{color:#555;padding:0 2px}.post-body .label.default{background:#f0f0f0}.post-body .label.primary{background:#efe6f7}.post-body .label.info{background:#e5f2f8}.post-body .label.success{background:#e7f4e9}.post-body .label.warning{background:#fcf6e1}.post-body .label.danger{background:#fae8eb}.post-body .link-grid{display:grid;grid-gap:1.5rem;gap:1.5rem;grid-template-columns:1fr 1fr;margin-bottom:20px;padding:1rem}.post-body .link-grid .link-grid-container{border:solid #ddd;box-shadow:1rem 1rem .5rem rgba(0,0,0,.5);min-height:5rem;min-width:0;padding:.5rem;position:relative;transition:background .3s}.post-body .link-grid .link-grid-container:hover{animation:.5s next-shake;background:var(--card-bg-color)}.post-body .link-grid .link-grid-container:active{box-shadow:.5rem .5rem .25rem rgba(0,0,0,.5);transform:translate(.2rem,.2rem)}.post-body .link-grid .link-grid-container .link-grid-image{border:1px solid #ddd;border-radius:50%;box-sizing:border-box;height:5rem;padding:3px;position:absolute;width:5rem}.post-body .link-grid .link-grid-container p{margin:0 1rem 0 6rem}.post-body .link-grid .link-grid-container p:first-of-type{font-size:1.2em}.post-body .link-grid .link-grid-container p:last-of-type{font-size:.8em;line-height:1.3rem;opacity:.7}.post-body .link-grid .link-grid-container a{border:0;height:100%;left:0;position:absolute;top:0;width:100%}@-moz-keyframes next-shake{0%{transform:translate(1pt,1pt) rotate(0)}10%{transform:translate(-1pt,-2pt) rotate(-1deg)}20%{transform:translate(-3pt,0) rotate(1deg)}30%{transform:translate(3pt,2pt) rotate(0)}40%{transform:translate(1pt,-1pt) rotate(1deg)}50%{transform:translate(-1pt,2pt) rotate(-1deg)}60%{transform:translate(-3pt,1pt) rotate(0)}70%{transform:translate(3pt,1pt) rotate(-1deg)}80%{transform:translate(-1pt,-1pt) rotate(1deg)}90%{transform:translate(1pt,2pt) rotate(0)}100%{transform:translate(1pt,-2pt) rotate(-1deg)}}@-webkit-keyframes next-shake{0%{transform:translate(1pt,1pt) rotate(0)}10%{transform:translate(-1pt,-2pt) rotate(-1deg)}20%{transform:translate(-3pt,0) rotate(1deg)}30%{transform:translate(3pt,2pt) rotate(0)}40%{transform:translate(1pt,-1pt) rotate(1deg)}50%{transform:translate(-1pt,2pt) rotate(-1deg)}60%{transform:translate(-3pt,1pt) rotate(0)}70%{transform:translate(3pt,1pt) rotate(-1deg)}80%{transform:translate(-1pt,-1pt) rotate(1deg)}90%{transform:translate(1pt,2pt) rotate(0)}100%{transform:translate(1pt,-2pt) rotate(-1deg)}}@-o-keyframes next-shake{0%{transform:translate(1pt,1pt) rotate(0)}10%{transform:translate(-1pt,-2pt) rotate(-1deg)}20%{transform:translate(-3pt,0) rotate(1deg)}30%{transform:translate(3pt,2pt) rotate(0)}40%{transform:translate(1pt,-1pt) rotate(1deg)}50%{transform:translate(-1pt,2pt) rotate(-1deg)}60%{transform:translate(-3pt,1pt) rotate(0)}70%{transform:translate(3pt,1pt) rotate(-1deg)}80%{transform:translate(-1pt,-1pt) rotate(1deg)}90%{transform:translate(1pt,2pt) rotate(0)}100%{transform:translate(1pt,-2pt) rotate(-1deg)}}@keyframes next-shake{0%{transform:translate(1pt,1pt) rotate(0)}10%{transform:translate(-1pt,-2pt) rotate(-1deg)}20%{transform:translate(-3pt,0) rotate(1deg)}30%{transform:translate(3pt,2pt) rotate(0)}40%{transform:translate(1pt,-1pt) rotate(1deg)}50%{transform:translate(-1pt,2pt) rotate(-1deg)}60%{transform:translate(-3pt,1pt) rotate(0)}70%{transform:translate(3pt,1pt) rotate(-1deg)}80%{transform:translate(-1pt,-1pt) rotate(1deg)}90%{transform:translate(1pt,2pt) rotate(0)}100%{transform:translate(1pt,-2pt) rotate(-1deg)}}.post-body .note{border-radius:3px;margin-bottom:20px;padding:1em;position:relative;border:1px solid #eee;border-left-width:5px}.post-body .note summary{cursor:pointer;outline:0}.post-body .note summary p{display:inline}.post-body .note h2,.post-body .note h3,.post-body .note h4,.post-body .note h5,.post-body .note h6{border-bottom:initial;margin:0;padding-top:0}.post-body .note blockquote:first-child,.post-body .note img:first-child,.post-body .note ol:first-child,.post-body .note p:first-child,.post-body .note pre:first-child,.post-body .note table:first-child,.post-body .note ul:first-child{margin-top:0}.post-body .note blockquote:last-child,.post-body .note img:last-child,.post-body .note ol:last-child,.post-body .note p:last-child,.post-body .note pre:last-child,.post-body .note table:last-child,.post-body .note ul:last-child{margin-bottom:0}.post-body .note.default{border-left-color:#777}.post-body .note.default h2,.post-body .note.default h3,.post-body .note.default h4,.post-body .note.default h5,.post-body .note.default h6{color:#777}.post-body .note.primary{border-left-color:#6f42c1}.post-body .note.primary h2,.post-body .note.primary h3,.post-body .note.primary h4,.post-body .note.primary h5,.post-body .note.primary h6{color:#6f42c1}.post-body .note.info{border-left-color:#428bca}.post-body .note.info h2,.post-body .note.info h3,.post-body .note.info h4,.post-body .note.info h5,.post-body .note.info h6{color:#428bca}.post-body .note.success{border-left-color:#5cb85c}.post-body .note.success h2,.post-body .note.success h3,.post-body .note.success h4,.post-body .note.success h5,.post-body .note.success h6{color:#5cb85c}.post-body .note.warning{border-left-color:#f0ad4e}.post-body .note.warning h2,.post-body .note.warning h3,.post-body .note.warning h4,.post-body .note.warning h5,.post-body .note.warning h6{color:#f0ad4e}.post-body .note.danger{border-left-color:#d9534f}.post-body .note.danger h2,.post-body .note.danger h3,.post-body .note.danger h4,.post-body .note.danger h5,.post-body .note.danger h6{color:#d9534f}.post-body .tabs{margin-bottom:20px}.post-body .tabs,.tabs-comment{padding-top:10px}.post-body .tabs ul.nav-tabs,.tabs-comment ul.nav-tabs{background:var(--body-bg-color);display:flex;display:flex;flex-wrap:wrap;justify-content:center;margin:0;padding:0;position:-webkit-sticky;position:sticky;top:0;z-index:5}.post-body .tabs ul.nav-tabs li.tab,.tabs-comment ul.nav-tabs li.tab{border-bottom:1px solid #ddd;border-left:1px solid transparent;border-right:1px solid transparent;border-radius:0;border-top:3px solid transparent;flex-grow:1;list-style-type:none}@media (max-width:413px){.post-body .tabs ul.nav-tabs,.tabs-comment ul.nav-tabs{display:block;margin-bottom:5px}.post-body .tabs ul.nav-tabs li.tab,.tabs-comment ul.nav-tabs li.tab{border-bottom:1px solid transparent;border-left:3px solid transparent;border-right:1px solid transparent;border-top:1px solid transparent;border-radius:0}}.post-body .tabs ul.nav-tabs li.tab a,.tabs-comment ul.nav-tabs li.tab a{border-bottom:initial;display:block;line-height:1.8;padding:.25em .75em;text-align:center;transition:.2s ease-out}.post-body .tabs ul.nav-tabs li.tab a i,.tabs-comment ul.nav-tabs li.tab a i{width:1.285714285714286em}.post-body .tabs ul.nav-tabs li.tab.active,.tabs-comment ul.nav-tabs li.tab.active{border-color:#fc6423 #ddd transparent}@media (max-width:413px){.post-body .tabs ul.nav-tabs li.tab.active,.tabs-comment ul.nav-tabs li.tab.active{border-color:#ddd #ddd #ddd #fc6423}}.post-body .tabs ul.nav-tabs li.tab.active a,.tabs-comment ul.nav-tabs li.tab.active a{cursor:default}.post-body .tabs .tab-content,.tabs-comment .tab-content{border:1px solid #ddd;border-radius:0;border-top-color:transparent}@media (max-width:413px){.post-body .tabs .tab-content,.tabs-comment .tab-content{border-radius:0;border-top-color:#ddd}}.post-body .tabs .tab-content .tab-pane,.tabs-comment .tab-content .tab-pane{padding:20px 20px 0}.post-body .tabs .tab-content .tab-pane:not(.active),.tabs-comment .tab-content .tab-pane:not(.active){display:none}.pagination .next,.pagination .page-number,.pagination .prev,.pagination .space{display:inline-block;margin:-1px 10px 0;padding:0 10px}.pagination .page-number.current{background:#ccc;border-color:#ccc;color:var(--content-bg-color)}.pagination{border-top:1px solid #eee;margin:120px 0 0;text-align:center}.pagination .next,.pagination .page-number,.pagination .prev{border-bottom:0;border-top:1px solid #eee;transition:border-color .2s ease-in-out}.pagination .next:hover,.pagination .page-number:hover,.pagination .prev:hover{border-top-color:var(--link-hover-color)}@media (max-width:767px){.post-body .link-grid{grid-template-columns:1fr}.pagination .next,.pagination .page-number,.pagination .prev,.pagination .space{margin:0 5px}.pagination{border-top:0}.pagination .next,.pagination .page-number,.pagination .prev{border-bottom:1px solid #eee;border-top:0}.pagination .next:hover,.pagination .page-number:hover,.pagination .prev:hover{border-bottom-color:var(--link-hover-color)}.site-meta{text-align:center}}.pagination .space{margin:0;padding:0}.comments{margin-top:60px;overflow:hidden}.comment-button-group{display:flex;display:flex;flex-wrap:wrap;justify-content:center;justify-content:center;margin:1em 0}.comment-button-group .comment-button{margin:.1em .2em}.comment-button-group .comment-button.active{background:var(--btn-default-hover-bg);border-color:var(--btn-default-hover-border-color);color:var(--btn-default-hover-color)}.comment-position{display:none}.comment-position.active{display:block}.tabs-comment{margin-top:4em;padding-top:0}.tabs-comment .comments{margin-top:0;padding-top:0}.headband{background:var(--theme-color);height:3px}@media (max-width:991px){.headband{display:none}}header.header{background:0 0}.header-inner{margin:0 auto;width:700px}@media (min-width:1200px){.header-inner{width:800px}}@media (min-width:1600px){.header-inner{width:900px}}.site-brand-container{display:flex;flex-shrink:0;padding:0 10px}.use-motion .site-brand-container .toggle,.use-motion header.header{opacity:0}.site-meta{flex-grow:1;text-align:center}@media (max-width:991px){.custom-logo-image{display:none}}.brand{border-bottom:0;color:var(--brand-color);display:inline-block;padding:0 40px}.brand:hover{color:var(--brand-hover-color)}.site-title{font-family:Lato,'PingFang SC','Microsoft YaHei',sans-serif;font-size:1.375em;font-weight:400;line-height:1.5;margin:0}.site-subtitle{color:#999;font-size:.8125em;margin:10px 0}.use-motion .custom-logo-image,.use-motion .site-subtitle,.use-motion .site-title{opacity:0;position:relative;top:-10px}.site-nav-right,.site-nav-toggle{display:none}.site-nav-right .toggle,.site-nav-toggle .toggle{color:var(--text-color);padding:10px;width:22px}.site-nav-right .toggle .toggle-line,.site-nav-toggle .toggle .toggle-line{background:var(--text-color);border-radius:1px}@media (max-width:767px){.site-nav-right,.site-nav-toggle{display:flex;flex-direction:column;justify-content:center}.site-nav{--scroll-height:0;height:0;overflow:hidden;transition:height .2s ease-in-out}body:not(.site-nav-on) .site-nav .animated{animation:none}body.site-nav-on .site-nav{height:var(--scroll-height)}}.menu{margin:0;padding:1em 0;text-align:center}.menu-item{display:inline-block;list-style:none;margin:0 10px}@media (max-width:767px){.menu-item{display:block;margin-top:10px}.menu-item.menu-item-search{display:none}}.menu-item a{border-bottom:0;display:block;font-size:.8125em;transition:border-color .2s ease-in-out}.menu-item a.menu-item-active,.menu-item a:hover{background:var(--menu-item-bg-color)}.menu-item .fa,.menu-item .fab,.menu-item .far,.menu-item .fas{margin-right:8px}.menu-item .badge{display:inline-block;font-weight:700;line-height:1;margin-left:.35em;margin-top:.35em;text-align:center;white-space:nowrap}@media (max-width:767px){.menu-item .badge{float:right;margin-left:0}}.use-motion .menu-item{visibility:hidden}.sidebar-inner{color:#999;max-height:calc(100vh - 36px);padding:18px 10px;text-align:center;display:flex;flex-direction:column;justify-content:center}.site-overview-item:not(:first-child){margin-top:10px}.cc-license .cc-opacity{border-bottom:0;opacity:.7}.cc-license .cc-opacity:hover{opacity:.9}.cc-license img{display:inline-block}.site-author-image{border:2px solid #333;max-width:96px;padding:2px;border-radius:50%;transition:transform 1s ease-out}.site-author-image:hover{transform:rotateZ(360deg)}.site-author-name{color:#f5f5f5;font-weight:400;margin:5px 0 0}.site-description{color:#999;font-size:1em;margin-top:5px}.links-of-author a{font-size:.8125em}.links-of-author .fa,.links-of-author .fab,.links-of-author .far,.links-of-author .fas{margin-right:2px}.sidebar .sidebar-button:not(:first-child){margin-top:15px}.sidebar .sidebar-button button{background:0 0;color:#fc6423;cursor:pointer;line-height:2;padding:0 15px;border:1px solid #fc6423;border-radius:4px}.sidebar .sidebar-button button:hover{background:#fc6423;color:#fff}.sidebar .sidebar-button button .fa,.sidebar .sidebar-button button .fab,.sidebar .sidebar-button button .far,.sidebar .sidebar-button button .fas{margin-right:5px}.links-of-blogroll{font-size:.8125em}.links-of-blogroll-title{font-size:.875em;font-weight:600;margin-top:0}.links-of-blogroll-list{list-style:none;margin:0;padding:0}.sidebar-dimmer{display:none}@media (max-width:991px){.sidebar-dimmer{background:#000;display:block;height:100%;left:0;opacity:0;position:fixed;top:0;transition:visibility .4s,opacity .4s;visibility:hidden;width:100%;z-index:10}.sidebar-active .sidebar-dimmer{opacity:.7;visibility:visible}}.sidebar-nav{display:none;margin:0;padding-bottom:20px;padding-left:0}.sidebar-nav-active .sidebar-nav{display:block}.sidebar-nav li{border-bottom:1px solid transparent;color:#666;cursor:pointer;display:inline-block;font-size:.875em}.sidebar-nav li.sidebar-nav-overview{margin-left:10px}.sidebar-nav li:hover{color:#f5f5f5}.sidebar-overview-active .sidebar-nav-overview,.sidebar-toc-active .sidebar-nav-toc{border-bottom-color:#87daff;color:#87daff}.sidebar-overview-active .sidebar-nav-overview:hover,.sidebar-toc-active .sidebar-nav-toc:hover{color:#87daff}.sidebar-panel-container{flex:1;overflow-x:hidden;overflow-y:auto}.sidebar-panel{display:none}.sidebar-overview-active .site-overview-wrap{display:flex;flex-direction:column;justify-content:center}.sidebar-toc-active .post-toc-wrap{display:block}.sidebar-toggle{bottom:45px;height:12px;padding:6px 5px;width:14px;background:#222;cursor:pointer;opacity:.8;position:fixed;z-index:30;right:30px}.sidebar-toggle:hover{opacity:1}@media (max-width:991px){.sidebar-toggle{right:20px;opacity:1}}.sidebar-toggle:hover .toggle-line{background:#87daff}@media (any-hover:hover){body:not(.sidebar-active) .sidebar-toggle:hover .toggle-line:first-child{top:2px;transform:rotate(-45deg);width:50%}body:not(.sidebar-active) .sidebar-toggle:hover .toggle-line:last-child{top:-2px;transform:rotate(45deg);width:50%}}.sidebar-active .sidebar-toggle .toggle-line:nth-child(2){opacity:0}.sidebar-active .sidebar-toggle .toggle-line:first-child{top:5px;transform:rotate(-45deg)}.sidebar-active .sidebar-toggle .toggle-line:last-child{top:-5px;transform:rotate(45deg)}.post-toc{font-size:.875em}.post-toc ol{list-style:none;margin:0;padding:0 2px 5px 10px;text-align:left}.post-toc ol>ol{padding-left:0}.post-toc ol a{transition:.2s ease-in-out}.post-toc .nav-item{line-height:1.8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.post-toc .nav .nav-child{display:none}.post-toc .nav .active-current>.nav-child,.post-toc .nav .active-current>.nav-child>.nav-item,.post-toc .nav .active>.nav-child{display:block}.post-toc .nav .active>a{border-bottom-color:#87daff;color:#87daff}.post-toc .nav .active-current>a,.post-toc .nav .active-current>a:hover{color:#87daff}.site-state{display:flex;flex-wrap:wrap;justify-content:center;line-height:1.4}.site-state-item{padding:0 15px}.site-state-item a{border-bottom:0;display:block}.site-state-item-count{display:block;font-size:1.25em;font-weight:600}.site-state-item-name{color:inherit;font-size:.875em}.footer{color:#999;font-size:.875em;padding:20px 0}.footer.footer-fixed{bottom:0;left:0;position:absolute;right:0}.footer-inner{box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;margin:0 auto;width:700px}@media (min-width:1200px){.footer-inner{width:800px}}@media (min-width:1600px){.footer-inner{width:900px}}.use-motion .footer{opacity:0}.languages{display:inline-block;font-size:1.125em;position:relative}.languages .lang-select-label span{margin:0 .5em}.languages .lang-select{height:100%;left:0;opacity:0;position:absolute;top:0;width:100%}.with-love{color:red;display:inline-block;margin:0 5px;animation:1.33s ease-in-out infinite icon-animate}.busuanzi-count #busuanzi_container_site_pv,.busuanzi-count #busuanzi_container_site_uv{display:none}@-moz-keyframes icon-animate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,50%,60%,70%,80%{transform:scale(1.1)}}@-webkit-keyframes icon-animate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,50%,60%,70%,80%{transform:scale(1.1)}}@-o-keyframes icon-animate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,50%,60%,70%,80%{transform:scale(1.1)}}@keyframes icon-animate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,50%,60%,70%,80%{transform:scale(1.1)}}.noscript-warning{background-color:#f55;color:#fff;font-family:sans-serif;font-size:1rem;font-weight:700;left:0;position:fixed;text-align:center;top:0;width:100%;z-index:50}.back-to-top{font-size:12px;margin:8px -10px -20px;opacity:0;transition:opacity .2s ease-in-out}.back-to-top.back-to-top-on{cursor:pointer;opacity:.8}.back-to-top.back-to-top-on:hover{opacity:1}.reading-progress-bar{--progress:0;background:#37c6c0;height:3px;position:fixed;z-index:50;width:var(--progress);left:0;top:0}.rtl.post-body a,.rtl.post-body h1,.rtl.post-body h2,.rtl.post-body h3,.rtl.post-body h4,.rtl.post-body h5,.rtl.post-body h6,.rtl.post-body li,.rtl.post-body ol,.rtl.post-body p,.rtl.post-body ul{direction:rtl;font-family:UKIJ Ekran}.rtl.post-title{font-family:UKIJ Ekran}.post-button{margin-top:40px;text-align:center}.use-motion .collection-header,.use-motion .comments,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{visibility:hidden}.posts-collapse .post-content{margin-bottom:35px;margin-left:35px;position:relative}@media (max-width:767px){.posts-collapse .post-content{margin-left:0;margin-right:0}}.posts-collapse .post-content .collection-title{font-size:1.125em;position:relative}.posts-collapse .post-content .collection-title::before{background:#999;border:1px solid #fff;margin-left:-6px;margin-top:-4px;position:absolute;top:50%;border-radius:50%;content:' ';height:10px;width:10px}.posts-collapse .post-content .collection-year{font-size:1.5em;font-weight:700;margin:60px 0;position:relative}.posts-collapse .post-content .collection-year::before{background:#bbb;margin-left:-4px;margin-top:-4px;position:absolute;top:50%;border-radius:50%;content:' ';height:8px;width:8px}.posts-collapse .post-content .collection-header{display:block;margin-left:20px}.posts-collapse .post-content .collection-header small{color:#bbb;margin-left:5px}.posts-collapse .post-content .post-header{border-bottom:1px dashed #ccc;margin:30px 2px 0;padding-left:15px;position:relative;transition:border .2s ease-in-out}.posts-collapse .post-content .post-header::before{background:#bbb;border:1px solid #fff;left:-6px;position:absolute;top:.75em;transition:background .2s ease-in-out;border-radius:50%;content:' ';height:6px;width:6px}.posts-collapse .post-content .post-header:hover{border-bottom-color:#666}.posts-collapse .post-content .post-header:hover::before{background:#222}.posts-collapse .post-content .post-meta-container{display:inline;font-size:.75em;margin-right:10px}.posts-collapse .post-content .post-title{display:inline}.posts-collapse .post-content .post-title a{border-bottom:0;color:var(--link-color)}.posts-collapse .post-content .post-title .fa-external-link-alt{font-size:.875em;margin-left:5px}.posts-collapse .post-content::before{background:#f5f5f5;content:' ';height:100%;margin-left:-2px;position:absolute;top:1.25em;width:4px}.post-body{font-family:Lato,'PingFang SC','Microsoft YaHei',sans-serif;overflow-wrap:break-word}@media (min-width:1200px){.post-body{font-size:1.125em}}@media (min-width:992px){.post-body{text-align:justify}}.post-body h1 .header-anchor,.post-body h1 .headerlink,.post-body h2 .header-anchor,.post-body h2 .headerlink,.post-body h3 .header-anchor,.post-body h3 .headerlink,.post-body h4 .header-anchor,.post-body h4 .headerlink,.post-body h5 .header-anchor,.post-body h5 .headerlink,.post-body h6 .header-anchor,.post-body h6 .headerlink{border-bottom-style:none;color:inherit;float:right;font-size:.875em;margin-left:10px;opacity:0}.post-body h1 .header-anchor::before,.post-body h1 .headerlink::before,.post-body h2 .header-anchor::before,.post-body h2 .headerlink::before,.post-body h3 .header-anchor::before,.post-body h3 .headerlink::before,.post-body h4 .header-anchor::before,.post-body h4 .headerlink::before,.post-body h5 .header-anchor::before,.post-body h5 .headerlink::before,.post-body h6 .header-anchor::before,.post-body h6 .headerlink::before{content:'\f0c1';font-family:'Font Awesome 5 Free';font-weight:900}.post-body h1:hover .header-anchor,.post-body h1:hover .headerlink,.post-body h2:hover .header-anchor,.post-body h2:hover .headerlink,.post-body h3:hover .header-anchor,.post-body h3:hover .headerlink,.post-body h4:hover .header-anchor,.post-body h4:hover .headerlink,.post-body h5:hover .header-anchor,.post-body h5:hover .headerlink,.post-body h6:hover .header-anchor,.post-body h6:hover .headerlink{opacity:.5}.post-body h1:hover .header-anchor:hover,.post-body h1:hover .headerlink:hover,.post-body h2:hover .header-anchor:hover,.post-body h2:hover .headerlink:hover,.post-body h3:hover .header-anchor:hover,.post-body h3:hover .headerlink:hover,.post-body h4:hover .header-anchor:hover,.post-body h4:hover .headerlink:hover,.post-body h5:hover .header-anchor:hover,.post-body h5:hover .headerlink:hover,.post-body h6:hover .header-anchor:hover,.post-body h6:hover .headerlink:hover{opacity:1}.post-body .exturl .fa{font-size:.875em;margin-left:4px}.post-body .fancybox+figcaption,.post-body .image-caption,.post-body img+figcaption{color:#999;font-size:.875em;font-weight:700;line-height:1;margin:-15px auto 15px;text-align:center}.post-body embed,.post-body iframe,.post-body img,.post-body video{margin-bottom:20px}.post-body .video-container{height:0;margin-bottom:20px;overflow:hidden;padding-top:75%;position:relative;width:100%}.post-body .video-container embed,.post-body .video-container iframe,.post-body .video-container object{height:100%;left:0;margin:0;position:absolute;top:0;width:100%}.post-gallery{display:flex;min-height:200px}.post-gallery .post-gallery-image{flex:1}.post-gallery .post-gallery-image:not(:first-child){clip-path:polygon(40px 0,100% 0,100% 100%,0 100%);margin-left:-20px}.post-gallery .post-gallery-image:not(:last-child){margin-right:-20px}.post-gallery .post-gallery-image img{height:100%;object-fit:cover;opacity:1;width:100%}.posts-expand .post-gallery{margin-bottom:60px}.posts-collapse .post-gallery{margin:15px 0}.posts-expand .post-header{font-size:1.125em;margin-bottom:60px;text-align:center}.posts-expand .post-title{font-size:1.5em;font-weight:400;margin:initial;overflow-wrap:break-word}.posts-expand .post-title-link{border-bottom:0;color:var(--link-color);display:inline-block;position:relative}.posts-expand .post-title-link::before{background:var(--link-color);bottom:0;content:'';height:2px;left:0;position:absolute;transform:scaleX(0);transition:transform .2s ease-in-out;width:100%}.posts-expand .post-title-link:hover::before{transform:scaleX(1)}.posts-expand .post-title-link .fa-external-link-alt{font-size:.875em;margin-left:5px}.post-sticky-flag{display:inline-block;margin-right:8px;transform:rotate(30deg)}.posts-expand .post-meta-container{color:#999;font-family:Lato,'PingFang SC','Microsoft YaHei',sans-serif;font-size:.75em;margin-top:3px}.posts-expand .post-meta-container .post-description{font-size:.875em;margin-top:2px}.posts-expand .post-meta-container time{border-bottom:1px dashed #999}.post-meta{display:flex;flex-wrap:wrap;justify-content:center}:not(.post-meta-break)+.post-meta-item::before{content:'|';margin:0 .5em}.post-meta-item-icon{margin-right:3px}@media (max-width:991px){.post-body{text-align:justify}.post-meta-item-text{display:none}}.post-meta-break{flex-basis:100%;height:0}#busuanzi_container_page_pv{display:none}.post-nav{border-top:1px solid #eee;display:flex;gap:30px;justify-content:space-between;margin-top:1em;padding:10px 5px 0}.post-nav-item{flex:1}.post-nav-item a{border-bottom:0;display:block;font-size:.875em;line-height:1.6}.post-nav-item a:active{top:2px}.post-nav-item .fa{font-size:.75em}.post-nav-item:first-child .fa{margin-right:5px}.post-nav-item:last-child{text-align:right}.post-nav-item:last-child .fa{margin-left:5px}.post-footer{display:flex;flex-direction:column;justify-content:center}.post-eof{background:#ccc;height:1px;margin:80px auto 60px;width:8%}.post-block:last-of-type .post-eof{display:none}.post-tags{margin-top:40px;text-align:center}.post-tags a{display:inline-block;font-size:.8125em}.post-tags a:not(:last-child){margin-right:10px}.post-widgets{border-top:1px solid #eee;margin-top:15px;text-align:center}.wpac-rating-container{height:20px;line-height:20px;margin-top:10px;padding-top:6px;text-align:center}.social-like{display:flex;font-size:.875em;justify-content:center;text-align:center}.reward-container{margin:1em 0 0;padding:1em 0;text-align:center}.reward-container button{background:0 0;color:#87daff;cursor:pointer;line-height:2;padding:0 15px;border:2px solid #87daff;border-radius:2px;outline:0;transition:.2s ease-in-out;vertical-align:text-top}.reward-container button:hover{background:#87daff;color:#fff}.post-reward{display:none;padding-top:20px}.post-reward.active{display:block}.post-reward div{display:inline-block}.post-reward div span{display:block}.post-reward div:hover span{animation:.1s linear infinite next-roll;pointer-events:none}.post-reward img{display:inline-block;margin:.8em 2em 0;max-width:100%;width:180px}@-moz-keyframes next-roll{from{transform:rotateZ(30deg)}to{transform:rotateZ(-30deg)}}@-webkit-keyframes next-roll{from{transform:rotateZ(30deg)}to{transform:rotateZ(-30deg)}}@-o-keyframes next-roll{from{transform:rotateZ(30deg)}to{transform:rotateZ(-30deg)}}@keyframes next-roll{from{transform:rotateZ(30deg)}to{transform:rotateZ(-30deg)}}.category-all-page .category-all-title{text-align:center}.category-all-page .category-all{margin-top:20px}.category-all-page .category-list{list-style:none;margin:0;padding:0}.category-all-page .category-list-item{margin:5px 10px}.category-all-page .category-list-count{color:#bbb}.category-all-page .category-list-count::before{content:' ('}.category-all-page .category-list-count::after{content:') '}.category-all-page .category-list-child{padding-left:10px}.event-list hr{background:#222;margin:20px 0 45px}.event-list hr::after{background:#222;color:#fff;content:'NOW';display:inline-block;font-weight:700;padding:0 5px}.event-list .event{--event-background:#222;--event-foreground:#bbb;--event-title:#fff;background:var(--event-background);padding:15px}.event-list .event .event-summary{border-bottom:0;color:var(--event-title);margin:0;padding:0 0 0 35px;position:relative}.event-list .event .event-summary::before{animation:1s ease-in-out infinite alternate dot-flash;background:var(--event-title);left:0;margin-top:-6px;position:absolute;top:50%;border-radius:50%;content:' ';height:12px;width:12px}.event-list .event:nth-of-type(odd) .event-summary::before{animation-delay:.5s}.event-list .event:not(:last-child){margin-bottom:20px}.event-list .event .event-relative-time{color:var(--event-foreground);display:inline-block;font-size:12px;font-weight:400;padding-left:12px}.event-list .event .event-details{color:var(--event-foreground);display:block;line-height:18px;padding:6px 0 6px 35px}.event-list .event .event-details::before{color:var(--event-foreground);display:inline-block;margin-right:9px;width:14px;font-family:'Font Awesome 5 Free';font-weight:900}.event-list .event .event-details.event-location::before{content:'\f041'}.event-list .event .event-details.event-duration::before{content:'\f017'}.event-list .event .event-details.event-description::before{content:'\f024'}.event-list .event-past{--event-background:#f5f5f5;--event-foreground:#999;--event-title:#222}@-moz-keyframes dot-flash{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@-webkit-keyframes dot-flash{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@-o-keyframes dot-flash{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@keyframes dot-flash{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}ul.breadcrumb{font-size:.75em;list-style:none;margin:1em 0;padding:0 2em;text-align:center}ul.breadcrumb li{display:inline}ul.breadcrumb li:not(:first-child)::before{content:'/\00a0';font-weight:400;padding:.5em}ul.breadcrumb li:last-child{font-weight:700}.tag-cloud{text-align:center}.tag-cloud a{display:inline-block;margin:10px}.tag-cloud-0{border-bottom-color:#aaa;color:#aaa}.tag-cloud-1{border-bottom-color:#9a9a9a;color:#9a9a9a}.tag-cloud-2{border-bottom-color:#8b8b8b;color:#8b8b8b}.tag-cloud-3{border-bottom-color:#7c7c7c;color:#7c7c7c}.tag-cloud-4{border-bottom-color:#6c6c6c;color:#6c6c6c}.tag-cloud-5{border-bottom-color:#5d5d5d;color:#5d5d5d}.tag-cloud-6{border-bottom-color:#4e4e4e;color:#4e4e4e}.tag-cloud-7{border-bottom-color:#3e3e3e;color:#3e3e3e}.tag-cloud-8{border-bottom-color:#2f2f2f;color:#2f2f2f}.tag-cloud-9{border-bottom-color:#202020;color:#202020}.tag-cloud-10{border-bottom-color:#111;color:#111}@media (prefers-color-scheme:dark){.tag-cloud-0{border-bottom-color:#555;color:#555}.tag-cloud-1{border-bottom-color:#646464;color:#646464}.tag-cloud-2{border-bottom-color:#737373;color:#737373}.tag-cloud-3{border-bottom-color:#828282;color:#828282}.tag-cloud-4{border-bottom-color:#929292;color:#929292}.tag-cloud-5{border-bottom-color:#a1a1a1;color:#a1a1a1}.tag-cloud-6{border-bottom-color:#b0b0b0;color:#b0b0b0}.tag-cloud-7{border-bottom-color:silver;color:silver}.tag-cloud-8{border-bottom-color:#cfcfcf;color:#cfcfcf}.tag-cloud-9{border-bottom-color:#dedede;color:#dedede}.tag-cloud-10{border-bottom-color:#eee;color:#eee}}.gt-comments a,.gt-header a,.gt-popup a{border-bottom:0}.gt-container .gt-popup .gt-action.is--active::before{top:.7em}.search-active{overflow:hidden}.search-pop-overlay{background:rgba(0,0,0,0);display:flex;height:100%;left:0;position:fixed;top:0;transition:visibility .4s,background .4s;visibility:hidden;width:100%;z-index:40}.search-active .search-pop-overlay{background:rgba(0,0,0,.3);visibility:visible}.search-popup{background:var(--card-bg-color);border-radius:5px;height:80%;margin:auto;transform:scale(0);transition:transform .4s;width:700px}.search-active .search-popup{transform:scale(1)}@media (max-width:767px){.search-popup{border-radius:0;height:100%;width:100%}}.search-popup .popup-btn-close,.search-popup .search-icon{color:#999;font-size:18px;padding:0 10px}.search-popup .popup-btn-close{cursor:pointer}.search-popup .popup-btn-close:hover .fa{color:#222}.search-popup .search-header{background:#eee;border-top-left-radius:5px;border-top-right-radius:5px;display:flex;padding:5px}@media (prefers-color-scheme:dark){.search-popup .search-header{background:#666}}.search-popup input.search-input{background:0 0;border:0;outline:0;width:100%}.search-popup input.search-input::-webkit-search-cancel-button{display:none}.search-popup .search-result-container{height:calc(100% - 55px);overflow:auto;padding:5px 25px}.search-popup .search-result-container hr{margin:5px 0 10px}.search-popup .search-result-container hr:first-child{display:none}.search-popup .search-result-list{margin:0 5px;padding:0;width:100%}.search-popup a.search-result-title{font-weight:700}.search-popup p.search-result{border-bottom:1px dashed #ccc;padding:5px 0}.search-popup .search-input-container{flex-grow:1;padding:2px}.search-popup .no-result{display:flex}.search-popup .search-result-icon{color:#ccc;margin:auto}mark.search-keyword{background:0 0;border-bottom:1px dashed #ff2a2a;color:#ff2a2a;font-weight:700}.popular-posts-header{border-bottom:1px solid #eee;font-size:1.125em;margin-bottom:10px;margin-top:60px}.popular-posts{padding:0}.popular-posts .popular-posts-item{margin-left:2em}.popular-posts .popular-posts-item .popular-posts-title{font-size:.875em;font-weight:400;line-height:2.4;margin:0}.use-motion .animated{animation-fill-mode:none;visibility:inherit}.use-motion .sidebar .animated{animation-fill-mode:both}.main-inner{margin:0 auto;width:700px;padding-bottom:60px}@media (min-width:1200px){.main-inner{width:800px}}@media (min-width:1600px){.main-inner{width:900px}}.post-block:first-of-type{padding-top:70px}@media (max-width:767px){.main-inner{padding-left:20px;padding-right:20px}.footer-inner,.header-inner,.main-inner{width:auto}.post-block:first-of-type{padding-top:35px}}.custom-logo-image{background:#fff;margin:0 auto 10px;max-width:150px;padding:5px}.brand{background:var(--btn-default-bg)}.header-inner{padding-top:100px}.menu .menu-item a{border-bottom:1px solid transparent}.menu .menu-item a.menu-item-active,.menu .menu-item a:hover{background:0 0;border-bottom:1px solid var(--link-hover-color)}@media (max-width:767px){.header-inner{padding-top:50px}.site-nav{padding-top:30px}.main-menu{border-bottom:1px solid #ddd;border-top:1px solid #ddd}.menu{text-align:left}.menu .menu-item{margin:0 10px}.menu .menu-item a{padding:5px 10px}.menu .menu-item a.menu-item-active,.menu .menu-item a:hover{border-bottom:1px dotted #ddd}}@media (min-width:768px){.menu .menu-item .fa,.menu .menu-item .fab,.menu .menu-item .far,.menu .menu-item .fas{display:block;line-height:2;margin-right:0;width:100%}}.menu .menu-item .badge{background:#eee;color:#555;padding:1px 4px}.sub-menu{margin:10px 0}.sub-menu .menu-item{display:inline-block}@media (min-width:992px){.sidebar-active{padding-right:320px}}.sidebar{right:-320px;background:#222;bottom:0;position:fixed;top:0;transition:.2s ease-out;width:320px;z-index:20}.sidebar-active .sidebar{right:0}.sidebar a{border-bottom-color:#555;color:#999}.sidebar a:hover{border-bottom-color:#eee;color:#eee}.links-of-author:not(:first-child){margin-top:15px}.links-of-author a{border-bottom-color:#555;display:inline-block;margin-bottom:10px;margin-right:10px;vertical-align:middle}.links-of-author a::before{background:#e9754e;display:inline-block;margin-right:3px;transform:translateY(-2px);border-radius:50%;content:' ';height:4px;width:4px}.links-of-blogroll-item{padding:2px 10px}.links-of-blogroll-item a{box-sizing:border-box;display:inline-block;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}</style>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"markhe1222.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.12.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="1 背景对于存储介质为磁盘或 SSD 的数据库，长期以来主流使用 B + 树这种索引结构来实现快速数据查找。当数据量不太大时，B + 树读写性能表现非常好。但是在海量数据情况下，B + 树越来越高，由于 B + 树更新和删除数据时需要沿着 B + 树逐层进行页分裂和页合并，严重影响数据写入性能。为了应对这种情况，google 在论文《Bigtable: A Distributed Storage">
+<meta property="og:type" content="article">
+<meta property="og:title" content="理解并实现 LSM Tree">
+<meta property="og:url" content="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/index.html">
+<meta property="og:site_name" content="马根花的小菜园">
+<meta property="og:description" content="1 背景对于存储介质为磁盘或 SSD 的数据库，长期以来主流使用 B + 树这种索引结构来实现快速数据查找。当数据量不太大时，B + 树读写性能表现非常好。但是在海量数据情况下，B + 树越来越高，由于 B + 树更新和删除数据时需要沿着 B + 树逐层进行页分裂和页合并，严重影响数据写入性能。为了应对这种情况，google 在论文《Bigtable: A Distributed Storage">
+<meta property="og:locale">
+<meta property="og:image" content="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220726235834566.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220727210426468.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220727212404732.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220727233111681.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220728233102326.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220728233443623.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220729000754155.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220729003944686.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220730214859305.png">
+<meta property="og:image" content="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220730215725108.png">
+<meta property="article:published_time" content="2022-07-26T15:37:49.000Z">
+<meta property="article:modified_time" content="2023-10-24T15:16:33.470Z">
+<meta property="article:author" content="MarkHe1222">
+<meta property="article:tag" content="分布式">
+<meta property="article:tag" content="存储">
+<meta property="article:tag" content="LSM Tree">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220726235834566.png">
+
+
+<link rel="canonical" href="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-Hans","comments":true,"permalink":"https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/","path":"2022/07/26/理解并实现LSM-Tree/","title":"理解并实现 LSM Tree"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>理解并实现 LSM Tree | 马根花的小菜园</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">马根花的小菜园</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">时光匆匆独白</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E8%83%8C%E6%99%AF"><span class="nav-text">1 背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="nav-text">2 基本原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E6%95%B4%E4%BD%93%E6%A1%86%E6%9E%B6"><span class="nav-text">3 整体框架</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%86%99%E5%85%A5%E8%BF%87%E7%A8%8B"><span class="nav-text">数据写入过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A9%BA%E9%97%B4%E6%94%BE%E5%A4%A7"><span class="nav-text">空间放大</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E6%9F%A5%E6%89%BE%E8%BF%87%E7%A8%8B"><span class="nav-text">数据查找过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BB%E6%94%BE%E5%A4%A7"><span class="nav-text">读放大</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BB%E6%94%BE%E5%A4%A7%E4%BC%98%E5%8C%96"><span class="nav-text">读放大优化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSTable%E5%90%88%E5%B9%B6"><span class="nav-text">SSTable 合并</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%99%E6%94%BE%E5%A4%A7"><span class="nav-text">写放大</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Leveled-Compaction"><span class="nav-text">Leveled Compaction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tiered-Compaction"><span class="nav-text">Tiered Compaction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#leveled-tiered-mixed-compaction"><span class="nav-text">leveled-tiered mixed compaction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FIFO-compaction"><span class="nav-text">FIFO compaction</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E5%9F%BA%E4%BA%8ELSM-Tree%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95KV%E5%AD%98%E5%82%A8"><span class="nav-text">4 基于 LSM Tree 实现简单 KV 存储</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF"><span class="nav-text">设计思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#WAL"><span class="nav-text">WAL</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%AE%E6%A0%87"><span class="nav-text">目标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MemTable-amp-Immutable-MemTable"><span class="nav-text">MemTable &amp; Immutable MemTable</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%AE%E6%A0%87-1"><span class="nav-text">目标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSTable"><span class="nav-text">SSTable</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%AE%E6%A0%87-2"><span class="nav-text">目标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSTable-Tree"><span class="nav-text">SSTable Tree</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%AE%E6%A0%87-3"><span class="nav-text">目标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GIT-%E4%BB%A3%E7%A0%81"><span class="nav-text">GIT 代码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-text">总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%95%E7%94%A8"><span class="nav-text">引用</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="MarkHe1222"
+      src="/images/tatan.png">
+  <p class="site-author-name" itemprop="name">MarkHe1222</p>
+  <div class="site-description" itemprop="description">Stay hungry, Stay foolish!</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/MarkHe1222" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;MarkHe1222" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:mark.he.1314@gmail.com" title="E-Mail → mailto:mark.he.1314@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+    <div class="links-of-blogroll motion-element links-of-blogroll-block">
+      <div class="links-of-blogroll-title">
+        <!-- modify icon to fire by szw -->
+        <i class="fa fa-history fa-" aria-hidden="true"></i>
+        近期文章
+      </div>
+      <ul class="links-of-blogroll-list">
+        
+        
+          <li>
+            <a href="/2023/03/26/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/" title="桥接模式" target="_blank">桥接模式</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/01/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/" title="适配器模式" target="_blank">适配器模式</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/23/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%EF%BC%9ACAP%E7%90%86%E8%AE%BA/" title="分布式系统：CAP 理论" target="_blank">分布式系统：CAP 理论</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/19/%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F/" title="外观模式" target="_blank">外观模式</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/16/HDFS%E7%B3%BB%E5%88%97-HDFS%E6%9E%B6%E6%9E%84%E8%AF%A6%E8%A7%A3/" title="HDFS 系列: HDFS 架构详解" target="_blank">HDFS 系列: HDFS 架构详解</a>
+          </li>
+        
+      </ul>
+    </div>
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+      <div class="sidebar-inner">
+        
+     </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://markhe1222.github.io/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/tatan.png">
+      <meta itemprop="name" content="MarkHe1222">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="马根花的小菜园">
+      <meta itemprop="description" content="Stay hungry, Stay foolish!">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="理解并实现 LSM Tree | 马根花的小菜园">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          理解并实现 LSM Tree
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-07-26 23:37:49" itemprop="dateCreated datePublished" datetime="2022-07-26T23:37:49+08:00">2022-07-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-10-24 23:16:33" itemprop="dateModified" datetime="2023-10-24T23:16:33+08:00">2023-10-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%98%E5%82%A8/" itemprop="url" rel="index"><span itemprop="name">存储</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="1-背景"><a href="#1-背景" class="headerlink" title="1 背景"></a>1 背景</h1><p>对于存储介质为磁盘或 SSD 的数据库，长期以来主流使用 B + 树这种索引结构来实现快速数据查找。当数据量不太大时，B + 树读写性能表现非常好。但是在海量数据情况下，B + 树越来越高，由于 B + 树更新和删除数据时需要沿着 B + 树逐层进行页分裂和页合并，严重影响数据写入性能。为了应对这种情况，google 在论文<code>《Bigtable: A Distributed Storage System for Structured Data》</code>中介绍了一种新的数据组织结构 <code>LSM Tree(Log-Structured Merge Tree)</code>，随后，<code>Bigtable</code> 主要作者 <code>Jeffrey Dean</code> 和 <code>Sanjay Ghemawat</code> 开源了一款基于 LSM Tree 实现的数据库 LevelDB，让大家对 LSM Tree 的思想和实现理解得更为透彻、深入。当前，比较流行的 NoSQL 数据库，如 Cassandra、RocksDB、HBase、LevelDB 等，newSQL 数据库，如 TiDB，均是使用 LSM Tree 来组织磁盘数据的。</p>
+<span id="more"></span>
+<!-- markdownlint-disable MD041 MD002--> 
+
+<h1 id="2-基本原理"><a href="#2-基本原理" class="headerlink" title="2 基本原理"></a>2 基本原理</h1><p>LSM Tree (Log-Structured Merge Tre) 中文名为：日志结构合并树。其实这并不是一种具体的数据结构，更多是一种数据结构的设计思想，是一个分层、有序、针对块存储设备（机械硬盘和 SSD）特点而设计的数据存储结构。它的核心理论基础还是磁盘的顺序写速度比随机写速度快非常多，即使是 SSD，由于块擦除和垃圾回收的影响，顺序写速度还是比随机写速度快很多。如下图所示：</p>
+<img src="/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220726235834566.png" alt="image-20220726235834566" style="zoom:50%;">
+
+<p>LSM Tree 将要存储的数据格式化为多个 <strong>SSTable（Sorted String Table）</strong>，一个 <code>SSTable</code> 内的数据是有序的任意字节组（arbitrary byte string），而且，SSTable 写入磁盘后是不可修改的（Log-Structured）。如有更新数据的需求时，LSM Tree 不修改旧数据，直接将新的数据写入新的 SSTable 中。若有删除需求时，而是将删除的标记写入 SSTable 中，等到后面合并的时候直接将该数据删除。所以 LSM Tree 的磁盘写入单位为 SSTable，即对磁盘的操作都是顺序的块写入，没有随机写入操作。从而将磁盘的写性能尽可能发挥出来。</p>
+<p><code>LSM Tree</code> 这种独特的写入方式，导致在查找数据时，<code>LSM Tree</code> 就不能像 <code>B+树</code>那样在一个统一的索引表中进行查找，而是从最新的 <code>SSTable</code> 到老的 <code>SSTable</code> 依次进行查找。如果在新 <code>SSTable</code> 中找到了需查找的数据或相应的删除标记，则直接返回查找结果；如果没有找到，再到老的 <code>SSTable</code> 中进行查找，直到最老的 <code>SSTable</code> 查找完。为了提高查找效率，<code>LSM Tree</code> 对 <code>SSTable</code> 进行分层、有序组织，也就是说把 <code>SSTable</code> 组织成多层，同一层可以有多个 <code>SSTable</code>，同一个数据在同一层的多个 <code>SSTable</code> 中可以不重复，而且数据可以做到在同一层中是有序的，即每一个 <code>SSTable</code> 内的数据是有序的，前一个 <code>SSTable</code> 的最大数据值小于后一个 <code>SSTable</code> 的最小数据值。这样可以加快在同一层 <code>SSTable</code> 中的数据查询速度。同时，<code>LSM Tree</code> 会将多个 <code>SSTable</code> 合并（<code>Compact</code>）为一个新的 <code>SSTable</code>，这样可以减少 <code>SSTable</code> 的数量，同时把修改前的数据或删除的数据真正从 <code>SSTable</code> 中删除，减小了 <code>SSTable</code> 的大小（Merge Tree），以提高查找性能。</p>
+<h1 id="3-整体框架"><a href="#3-整体框架" class="headerlink" title="3 整体框架"></a>3 整体框架</h1><img src="/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220727210426468.png" alt="image-20220727210426468" style="zoom: 50%;">
+
+<p>WAL（Write Ahead Log）实际上为数据库的日志结构文件，以 Append-Only 方式追加记录到日志文件，并不属于 LSM Tree。在实际的系统实践中，WAL 为系统不可或缺的部分，将 WAL 囊括进来，才能从整体上更准确地理解 LSM Tree。</p>
+<p>如上图所示，<code>LSM Tree</code> 的数据由两部分组成：内存部分和持久到磁盘中的部分。内存部分由一个 <code>MemTable</code> 和一个或多个 <code>Immutable MemTable</code> 组成。磁盘中的部分由分布在多个 level 的 <code>SSTable</code> 组成。level 级数越小（<code>level 0</code>）表示处于该 level 的 <code>SSTable</code> 越新，level 级数越大（<code>level 1...level N</code>）表示处于该 level 的 <code>SSTable</code> 越老，最大级数（<code>level N</code>）大小由系统设定。在本图中，磁盘中最小的级数为 <code>level 0</code>，也有的系统把内存中的 <code>Immutable MemTable</code> 定义为 <code>level 0</code>，而磁盘中的数据从 <code>Level 1</code> 开始，这只是 level 定义的不同，并不影响系统的工作流程和对系统的理解。</p>
+<p>其中 WAL 可以保证当系统崩溃重启后，内存中 MemTable 和 Immutable MemTable 中未持久化到磁盘中 SSTable 的数据不会丢失。</p>
+<p>内存中 MemTable 一般为有序数据结构，实现方式有很多种，如有序数组、红黑树、二叉搜索树，比较常见的方式为跳表，跳表支持高效的动态插入数据，对数据进行排序，也能高效地对数据进行精确查询与范围查询。</p>
+<p><code>SSTable</code> 一般由一组数据 block 和一组元数据 block 组成。元数据 block 存储了 <code>SSTable</code> 数据 block 的描述信息，如索引、BloomFilter、压缩、统计等信息。因为 <code>SSTable</code> 是不可更改的，且是有序的，索引往往采用二分法数组结构就可以了。为了节省存储空间和提升数据块 block 的读写效率，可以对数据 block 进行压缩。</p>
+<h2 id="数据写入过程"><a href="#数据写入过程" class="headerlink" title="数据写入过程"></a>数据写入过程</h2><img src="/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220727212404732.png" alt="image-20220727212404732" style="zoom:50%;">
+
+<p><code>LSM Tree</code> 写入数据时，先写一条记录到 <code>WAL</code> 中，然后将数据写入内存中的 <code>MemTable</code> 中，这样写入操作就完成了。（写入 WAL 与 MemTable 可以以事务的形式实现，两者成功才算成功）</p>
+<p>写 <code>MemTable</code> 时，写入新的数据，与修改现有数据的部分字段以及修改现有数据的所有字段，写入操作过程几乎是一样的，都是把传入的数据（合并）写入到 <code>MemTable</code> 中。删除数据时，则是在 <code>MemTable</code> 中写入一条删除标记。当 <code>MemTable</code> 的大小达到设定的大小（经典值是 64KB）时，<code>LSM Tree</code> 会把当前 <code>MemTable</code> 设置为一个不可修改的 <code>Immutable MemTable</code>，然后创建一个新的 <code>MemTable</code> 供新的数据写入。同时，<code>LSM Tree</code> 一般会有一些与写入线程（或进程）相独立的背景线程（或进程）负责将 <code>Immutable MemTable</code> flush 到磁盘中，将数据持久化。完成持久化的 Immutable MemTable 对应的 <code>WAL</code> 就可以从磁盘中删除了。而内存中 <code>Immutable MemTable</code> 数量的多少取决于 <code>Immutable MemTable</code> flush 的速度与 <code>Immutable MemTable</code> 生成的速度（数据写入速度）的差值。</p>
+<p>从上面介绍的写入过程可以知道，LSM Tree 的写入过程非常简单，只需要写 WAL 与 MemTable 即可。其中 WAL 是 Appand-Only 的方式在日志结构文件末尾追加的记录（顺序写），无需其余复杂的操作，写入性能非常好。而 MemTable 虽然需要如跳表的插入和排序，但是都是在内存中的操作，并且 MemTable 的大小也有限（64K），所以 MemTable 的写入性能也非常好。</p>
+<p>在 LSM Tree 的结构中，数据的写入性能与系统中的数据总量和数据更新类型（修改还是删除数据）都无关，写入速度比较稳定。</p>
+<h3 id="空间放大"><a href="#空间放大" class="headerlink" title="空间放大"></a>空间放大</h3><p>如果同一个数据被多次更新，那这个数据可能存储在多个 SSTable 当中，甚至统一数据的不同部分的最新数据内容存储在不同的 SSTable 中（数据部分更新的场景），因而同一数据在磁盘当中有多份副本，且老的副本已经过时，这导致了数据实际占用的存储空间大于数据的实际大小。这一现象叫做空间放大（space amplification）</p>
+<h2 id="数据查找过程"><a href="#数据查找过程" class="headerlink" title="数据查找过程"></a>数据查找过程</h2><img src="/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220727233111681.png" alt="image-20220727233111681" style="zoom:50%;">
+
+<p>因为<a href="#%E7%A9%BA%E9%97%B4%E6%94%BE%E5%A4%A7">空间放大</a>的问题，所以 LSM Tree 的数据查找过程如上图所示：先在内存 <code>MemTable</code> 中查找，然后在内存中的 <code>Immutable MemTable</code> 中查找，然后在 <code>level 0 SSTable</code> 中查找，最后在 <code>level N SSTable</code> 中查找。其中 SSTable 的查找顺序也为从新到老，直到在某个（或某些个）<code>SSTable</code> 中查找到了所需的数据，或者最老的 <code>SSTable</code> 查找完也没有找到需要的数据。</p>
+<p>查找某个具体的 SSTable 时，先把 SSTable 的元数据 block 读到内存中，根据 BloomFilter 可以快速确定数据在当前 SSTable 中是否存在，如果存在，则采用二分法确定数据在哪个数据 block，然后将相应数据 block 读到内存中进行精确查找。若不存在，直接跳过，查找下一个更早的 SSTable，重复以上步骤。</p>
+<h3 id="读放大"><a href="#读放大" class="headerlink" title="读放大"></a>读放大</h3><p>由于多层 SSTable 结果的存在，查询数据时需要遍历多个可能不包含数据的 SSTable（最坏的情况需要读取所有的 SSTable）。这种现象叫做读放大（read amplification）</p>
+<h3 id="读放大优化"><a href="#读放大优化" class="headerlink" title="读放大优化"></a>读放大优化</h3><p>读放大问题严重影响了 LSM Tree 的数据查找性能，特别是当数据不存在或者在非常老的 SSTable 中。在著名的 Google 三驾马车之一的论文 <a target="_blank" rel="noopener" href="https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf">BigTable</a> 提到了几种提升数据查找性能的方法：</p>
+<ol>
+<li>压缩（<strong>Compression</strong>）：将 SSTable 的 block 进行压缩，降低 block 的磁盘空间占用，也能减少磁盘的读写时间，但是需要消耗 CPU 的性能来进行 block 的压缩和解压缩。</li>
+<li>布隆过滤器（<strong>BloomFilter</strong>）：BloomFilter 可以快速确定数据不在 SSTable 中，而不用读取数据 block 内容。</li>
+<li>缓存（<strong>Cache</strong>）：SSTable 是不可变的，非常适合缓存。可以将热点数据缓存到到内存中，尽量避免访问磁盘。</li>
+<li>SSTable 合并（<strong>Compaction</strong>）：将多个 SSTable 合并为一个 SSTable，删除旧数据或物理删除已经被删除的数据，降低空间放大；同时减少 SSTable 数量，降低读放大。</li>
+</ol>
+<h2 id="SSTable合并"><a href="#SSTable合并" class="headerlink" title="SSTable合并"></a>SSTable 合并</h2><h3 id="写放大"><a href="#写放大" class="headerlink" title="写放大"></a>写放大</h3><p>SSTable 合是将多 SSTable 合并成一个新的 SSTable 写入下一个 Level，合并过程中，会删除过期重叠数据，并将标记为删除的数据从磁盘中删除，减少了 SSTable 的数据，可以有效缓解读放大和空间放大问题。这个过程需要将所有涉及合并的 SSTable 都读取到内存当中，并将合并的新 SSTable 写入到磁盘，这样会消耗大量的 CPU 时间和磁盘 IO。这种现象叫写放大（write amplification）</p>
+<p>SSTable 合并分为 <code>minor compaction</code> 和 <code>major compaction</code></p>
+<ul>
+<li>Minor Compaction：是指将内存中的 <code>Immutable MemTable</code> 内容 flush 到磁盘中形成 SSTable 时进行的数据处理过程</li>
+<li> Major Compaction: 是指相邻的两级 level 将数字小 level（如 level 0）的 SSTable 合并入数字大 level（如 level 1）的 SSTable 中的过程</li>
+</ul>
+<p>SSTable 合并其实就是在空间放大、写放大、读放大几个相互制约的因素间寻求平衡，不同的应用场景需要重点优化解决某个问题。</p>
+<h3 id="Leveled-Compaction"><a href="#Leveled-Compaction" class="headerlink" title="Leveled Compaction"></a>Leveled Compaction</h3><p><img src="/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220728233102326.png" alt="image-20220728233102326"></p>
+<p>leveled compaction 的策略为：对每层的 SSTable 的数据总量设置一个阈值，level 数据越大，阈值也越大，如 level 0 的阈值为 10MB，level 1 的阈值为 100MB，level 2 的阈值为 1000MB。当其中某层的 SSTable 数据总量达到阈值后，选取一个 SSTabel 合并到下一个 level 的一个或多个 SSTable 中。合并后会删除重复的数据，也就说，同一层的 SSTable 中，没有重复的数据。</p>
+<p>leveled compaction 能保证同一层的 SSTable 没有重复数据，相对来说对空间放大有最好的优化效果。但是，合并时需要读取多个 SSTable，然后写入多个更新后的 SSTable，导致更大的写放大和读放大。但是在数据查找过程中，由于减少了需要查找 SSTable 的数量，降低了数据查找时的读放大，提升了数据查找的性能。所以，leveled compaction 适合比较关注数据查询速度和控制磁盘空间占用的场景。<strong>比如，数据写入一次，但是会被频繁反复查询；数据经常被修改，但是需要控制磁盘空间大小和保证数据查询速度。</strong></p>
+<blockquote>
+<p>Cassandra 的 LCS（<code>Leveled Compaction Strategy</code>）和 RocksDB 的 <code>Classic Leveled Compaction</code> 采用的就是 leveled compaction 策略。</p>
+</blockquote>
+<h3 id="Tiered-Compaction"><a href="#Tiered-Compaction" class="headerlink" title="Tiered Compaction"></a>Tiered Compaction</h3><p><img src="/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220728233443623.png" alt="image-20220728233443623"></p>
+<p>tiered compaction 的策略为：当某 level 层的 SSTable 数量达到设定的阈值时，则将该层的多个 SSTable 合并为一个新的 SSTable，并放入高一层 level 中。</p>
+<p>tiered compaction 比较偏重于控制写放大在一定程度的前提下降低空间放大和提升数据查询性能。但是在同一层的 SSTable 中还是存在数据重叠，数据查询性能不如 leveled compaction。尤其是随着 level 数越来越大，单个 SSTable 数据量也越来越大，合并触发条件也越来越难，这些巨型 SSTable 中的重叠数据和被删除的数据占用的空间也就越来越难被释放掉。tiered compaction 比较适合数据修改频率不高，且最近写入的数据查询频率比较高的场景。</p>
+<blockquote>
+<p>Cassandra 的 STCS（<code>Size Tiered Compaction Strategy</code>）和 RocksDB 的 <code>universal Compaction</code> 使用的是 tiered compaction 策略。</p>
+</blockquote>
+<h3 id="leveled-tiered-mixed-compaction"><a href="#leveled-tiered-mixed-compaction" class="headerlink" title="leveled-tiered mixed compaction"></a>leveled-tiered mixed compaction</h3><p>是指在一个系统中，结合上述两者合并策略的优势，在部分 level 之间采用 leveled compaction 策略，另一部分 level 之间采用 tiered compaction 策略。</p>
+<blockquote>
+<p> RocksDB 的 <code>leveled Compaction</code> 采用的是 <code>leveled-tiered mixed compaction</code> 策略。数据从 <code>Immutable MemTable</code> flush 到 level 0 时采用的是 <code>tiered compaction</code>，也就是说 level0 中是存在重叠数据的。level0 到 levelN 之间采用 <code>leveld compaction</code> 策略。</p>
+</blockquote>
+<h3 id="FIFO-compaction"><a href="#FIFO-compaction" class="headerlink" title="FIFO compaction"></a>FIFO compaction</h3><p><img src="/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220729000754155.png" alt="image-20220729000754155"></p>
+<p><code>FIFO compaction</code> 在磁盘中只有一个 level 层级，SSTable 按生成的时间顺序排列，一旦生成数据就不会再修改，删除过早生成的 SSTable。适合时间序列数据。</p>
+<blockquote>
+<p>Cassandra 的 TWCS（<code>Time Window Compaction Strategy</code>）、DTCS（<code>Date Tiered Compaction Strategy</code>）和 RocksDB 的 <code>FIFO compaction</code> 使用的是 FIFO 类型的合并策略。</p>
+</blockquote>
+<h1 id="4-基于LSM-Tree实现简单KV存储"><a href="#4-基于LSM-Tree实现简单KV存储" class="headerlink" title="4 基于LSM Tree实现简单KV存储"></a>4 基于 LSM Tree 实现简单 KV 存储</h1><h2 id="设计思路"><a href="#设计思路" class="headerlink" title="设计思路"></a>设计思路</h2><h3 id="WAL"><a href="#WAL" class="headerlink" title="WAL"></a>WAL</h3><p>WAL 是保证系统崩溃重启后恢复内存的数据，即，<strong>能够还原所有对内存表的写操作，重新顺序执行这些操作，使得内存表恢复到上一次的状态</strong>。</p>
+<p>当 Immutable MemTable 的数据 flush 到磁盘后，则可以删除 WAL 文件，重新创建一个文件。</p>
+<blockquote>
+<p>关于 WAL 部分的实现，有不同的做法，有的全局只有唯一一个 WAL 文件，有的则使用多个 WAL 文件，具体的实现会根据场景而变化。</p>
+</blockquote>
+<p>恢复内存表数据时，需要从 WAL 文件中，读取每一次操作信息，重新作用于内存表，即重新执行各种写入操作。因此，直接对内存表进行写操作，和从 WAL 恢复数据重新对内存表进行写操作，都是一样的。恢复的内存表为实现的数据结构（二叉搜索树）</p>
+<p><img src="/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220729003944686.png" alt="image-20220729003944686"></p>
+<h4 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h4><p>需要将操作信息写到文件中，并且能够从 WAL 文件恢复内存表</p>
+<h3 id="MemTable-amp-Immutable-MemTable"><a href="#MemTable-amp-Immutable-MemTable" class="headerlink" title="MemTable &amp; Immutable MemTable"></a>MemTable &amp; Immutable MemTable</h3><p>MemTable 与 Immutable MemTable 使用相同的数据结构（二叉搜索树）</p>
+<p>系统初始化时，MemTable 为空，即没有任何数据，Immutable MemTable 为 null，即没有分配任何内存。其中 MemTable 的操作为<strong>插入入 KV 和删除 Key</strong>。</p>
+<p>一般当 MemTable 中的 Key 数量达到阈值时，MemTable 就会变成 Immutable MemTable ，然后创建一个新的 MemTable， Immutable MemTable 会在合适的时机，转换为 SSTable，flush 到磁盘文件中。所以 Immutable MemTable 为一个临时对象。</p>
+<h4 id="目标-1"><a href="#目标-1" class="headerlink" title="目标"></a>目标</h4><p>要实现增删查改、遍历</p>
+<h3 id="SSTable"><a href="#SSTable" class="headerlink" title="SSTable"></a>SSTable</h3><img src="/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220730214859305.png" alt="image-20220730214859305" style="zoom:50%;">
+
+<p>SSTable 结构可区分为多个部分：数据区、KV 索引区、元数据区</p>
+<img src="/2022/07/26/%E7%90%86%E8%A7%A3%E5%B9%B6%E5%AE%9E%E7%8E%B0LSM-Tree/image-20220730215725108.png" alt="image-20220730215725108" style="zoom:50%;">
+
+<p><strong>数据区</strong>：Immutable MemTable 被 flush 到 disk 的 SSTable 中时，顺序将每个 KV 数据都压缩成二进制数据，存储在数据区；<br><strong>KV 索引区</strong>：为增加数据区的查找性能，对数据区的每个 KV 都创建索引，并将索引数据压缩成二进制数据，存储在 KV 索引区；<br><strong>元数据区</strong>：占用固定的数据长度（64K），记录 SSTable 的数据结构，当查询 SSTable 的时候，可以先读取该长度内容获取数据；</p>
+<h4 id="目标-2"><a href="#目标-2" class="headerlink" title="目标"></a>目标</h4><p>能够加载文件信息，从中查找对应的数据</p>
+<h3 id="SSTable-Tree"><a href="#SSTable-Tree" class="headerlink" title="SSTable Tree"></a>SSTable Tree</h3><p>随着系统的运行，SSTable 会不断增加，则需要对这些 SSTable 进行管理。如当同一 level 的 SSTable 数据大小或者 SSTable 的数量达到一定阈值后，SSTable 进行合并等操作，查询的时候可以增加布隆过滤器快速判断 SSTable 中是否有 Key 等。</p>
+<h4 id="目标-3"><a href="#目标-3" class="headerlink" title="目标"></a>目标</h4><p>负责管理所有 SSTable，进行文件合并等</p>
+<h3 id="GIT-代码"><a href="#GIT-代码" class="headerlink" title="GIT 代码"></a>GIT 代码</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/MarkHe1222/lsm">https://github.com/MarkHe1222/lsm</a></p>
+</blockquote>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ol>
+<li>写数据时尽量批量操作。LSM Tree 数据写入性能已经很高了，但是批量操作时可以节省网络传输 RTT 时间。</li>
+<li>将数据进行分片。这样多个分片可以并行写，如果数据路由处理得当，也可以提升数据查询速度。但是增加了维护多个分片数据读写的复杂度。</li>
+<li>选择合适的主键。两个比较流行的选择是：1）采用递增的数字作为主键；2）采用业务本身标识符作为主键。数字作为主键可以减少写入和查询时进行比较、排序等操作的时间，还能提升索引缓存的效率；递增的数字往往保证是顺序写入的，可以减少排序时间。但是递增的数字往往不具备业务语义，业务实际查询时需要先查二级索引，然后进行主键查找。业务标识符往往是业务实际的身份区分符号，业务也往往通过业务标识符进行数据查询。但是业务标识符往往是一个字符串，可能会比较长，这样比较、排序、缓存效率方面不如数字。一般情况下，本人建议 LSM Tree 数据库采用业务标识符作为主键。因为为业务标识符建立索引以及维护索引的成本是免不了的，与其建立二级索引，不如直接建立主键索引。</li>
+<li>设计合理的二级索引，不建立不需要的二级索引。二级索引可以提升相应数据的查询速度，每增加一个二级索引，就需要额外维护相应的二级索引文件，严重影响写入数据性能。</li>
+<li>根据具体场景使用合适的 SSTable 合并策略。单次写，频繁读场景选择 leveled compaction 策略。</li>
+<li>在允许情况下关闭自动 SSTable 合并，在业务量低的时间段强制执行 SSTable 合并。</li>
+<li>数据更新时合理选择全量更新（覆盖写）方式还是部分更新（增量写）方式。全量更新方式增加了传输和写入的数据量，但是可以提升数据查询速度。部分更新方式会使数据分布在多个 SSTable 中，需要查询和合并多个 SSTable 中的数据才能得到完整的数据，会降低数据查询速度。如果数据修改比较频繁，且需要较高查询速度，建议采用全量更新方式。</li>
+</ol>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/google/leveldb">LevelDB-GitHub</a></li>
+<li><a target="_blank" rel="noopener" href="https://tech.meituan.com/2017/05/19/about-desk-io.html">磁盘 I/O 那些事</a></li>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/7kdg7VQMxa4TsYqPfF8Yug">理解 LSM Tree：一种高效读写的存储引擎</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/sD7O95O/article/details/125038808?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1-125038808-blog-105377370.pc_relevant_sortByAnswer&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1-125038808-blog-105377370.pc_relevant_sortByAnswer&amp;utm_relevant_index=1">使用 LSM Tree 思想实现一个 KV 数据库</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e89cd503c9ae?utm_campaign=hugo&amp;u_atoken=494fdad0-a3ba-4a73-9b84-abdc66566c50&amp;u_asession=01TB3FROgxhlcU337Vj5OhDfW-5uMmbZWhej68-VdZDB7hG4Th4dX6Ri12I8oRSa5rX0KNBwm7Lovlpxjd_P_q4JsKWYrT3W_NKPr8w6oU7K8vPGlHUZOAPp0aZqGb04UmPpcarp92QKzyJKyYjREPlmBkFo3NEHBv0PZUm6pbxQU&amp;u_asig=05g3629DOBq16YsuugxDy6-_PgNsCIk1KzlHLxZMwpQuyM-sEhvkyH52g9myoV99Pf0yUnhYd5Lwx8te7vhKEvO2hgC15vp56N7ZL0cnxqILMi3M1Y69u4lT5J76ILZDYyMRxkMsMt2_RPWXlQL6bz_PpGTky1w9ZyYAQrYHyw4nn9JS7q8ZD7Xtz2Ly-b0kmuyAKRFSVJkkdwVUnyHAIJzZydNbTMws_2ej6_jSbTNa0zrURdqDnre3mKfjk5KqOiWPRPQyB_SKrj-61LB_f61u3h9VXwMyh6PgyDIVSG1W94f1HPDhDW61g-vj2fa5Kq3IQNwfjy1LpNxIdkfKC0bMSjsbsPHULZ941MPP6uvuLnioLscH950VoSx3U92RzpmWspDxyAEEo4kbsryBKb9Q&amp;u_aref=797dMnj5gcoMAnfTFwfKK88d+Co=">LSM Tree-Based 存储引擎的 compaction 策略</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/b43b856e09bb?u_atoken=223e125a-9ceb-44f3-aca4-40de44b26b96&amp;u_asession=01l0ZXqC0_2UjRL4dYjBVf8DGDPymPwntVaK9_HubLJx_XO-1IAAlyNXZTW6g6WxS7X0KNBwm7Lovlpxjd_P_q4JsKWYrT3W_NKPr8w6oU7K800Z4SvggDiBaE0u3VZgT4Ppcarp92QKzyJKyYjREPlmBkFo3NEHBv0PZUm6pbxQU&amp;u_asig=05_UDHsNjsfU-Q4Sf8CfJcSNOEnQSmonOcsFKx1FeS2zZn_lWBMvwS3KMTKrLDn4hqSGgJVy5kDLRz-Eb02U3Y8e1EIqdi1UzMXN1XaoBW-Dqlt8K-4YJ3upWVIsjBp_ahKd-p2N4z8GBNObYI5tQvrmRkWVA1Hy5RChT83Ff2ut_9JS7q8ZD7Xtz2Ly-b0kmuyAKRFSVJkkdwVUnyHAIJzQwIsqIyyzeuCvmumnEayvSX_smdbLpBZ1MvNL2ZBL7oWPRPQyB_SKrj-61LB_f61u3h9VXwMyh6PgyDIVSG1W-ICVx0Jk-rBFAe5nBXiZ7LzZkRHp6MiWHt6djiloXwCg-BwDnGmhS4JOFiRsa3ooHbCGkeDOqqAHBOzRZIOj1hmWspDxyAEEo4kbsryBKb9Q&amp;u_aref=OI25968K/Bc4pOWTI6RcrH7J15w=">LSM Tree 原理详解</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yanghuahui/p/3483754.html">LSM 树由来、设计思想以及应用到 HBase 的索引</a></li>
+<li><a target="_blank" rel="noopener" href="http://chengfeng96.com/blog/2018/08/04/LSM%E8%B0%83%E7%A0%94%E7%AC%94%E8%AE%B0/">LSM 调研</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/burhanxz/Distributed-KV">KV 实现</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>您的支持将鼓励我继续创作！买包辣条</div>
+  <button>
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="MarkHe1222 WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="/images/alipay.png" alt="MarkHe1222 Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" rel="tag"><i class="fa fa-tag"></i> 分布式</a>
+              <a href="/tags/%E5%AD%98%E5%82%A8/" rel="tag"><i class="fa fa-tag"></i> 存储</a>
+              <a href="/tags/LSM-Tree/" rel="tag"><i class="fa fa-tag"></i> LSM Tree</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/07/15/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95-Paxos/" rel="prev" title="分布式一致性算法：Paxos">
+                  <i class="fa fa-chevron-left"></i> 分布式一致性算法：Paxos
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/08/07/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8%E8%AF%A6%E8%A7%A3/" rel="next" title="布隆过滤器详解">
+                  布隆过滤器详解 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.7.2/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"MarkHe1222","repo":"BlogComments","client_id":"adad63d4df6f6b8b51e7","client_secret":"8c4f0e142285d2062e5cac0815a008b38be77862","admin_user":"MarkHe1222","distraction_free_mode":false,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.7.2/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"c50c2350fef470728d8b5b06b87cf916"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>
