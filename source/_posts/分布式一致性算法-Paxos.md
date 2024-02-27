@@ -1,6 +1,6 @@
 ---
 title: 分布式一致性算法:Paxos
-date: 2022-07-15 16:54:20
+date: 2023-07-15 16:54:20
 categories: Algorithm
 tags: [分布式, Paxos, Multi-Paxos]
 ---

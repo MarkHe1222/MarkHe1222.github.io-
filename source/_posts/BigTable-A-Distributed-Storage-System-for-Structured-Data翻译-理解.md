@@ -1,6 +1,6 @@
 ---
 title: 'BigTable: A Distributed Storage System for Structured Data翻译&理解'
-date: 2022-08-22 23:37:55
+date: 2023-08-22 23:37:55
 categories: 存储
 tags: [GFS, BigTable, 存储, 分布式]
 ---

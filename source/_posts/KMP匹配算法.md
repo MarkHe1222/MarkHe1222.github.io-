@@ -1,6 +1,6 @@
 ---
 title: KMP匹配算法
-date: 2020-06-14 21:04:06
+date: 2022-06-14 21:04:06
 categories: Algorithm
 tags: Java
 ---
